@@ -1,359 +1,130 @@
-/* ==========================================================
-   Hangman Execution Notice
-   Parchment Style
-   ========================================================== */
-
-*{
+html, body {
+    width:100%;
+    height:100%;
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    overflow:hidden;
+    background:#2b1a0d;
 }
 
-html,
-body{
+
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.parchment {
 
     width:100%;
     height:100%;
+
+    box-sizing:border-box;
+
+    padding:20px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #8b6a3d,
+        #d8b878,
+        #8b6a3d
+    );
+
+    color:#2b1608;
+
+    text-align:center;
 
     overflow:hidden;
 
-    font-family:'Cinzel',serif;
-
-    background:#3b2b1f;
-
-    color:#2b1b0f;
+    font-family:Georgia,serif;
 }
 
-body{
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+h1 {
 
-    padding:25px;
-}
+    margin:0;
 
-/* ==========================================================
-   PAGE
-   ========================================================== */
-
-#page{
-
-    width:100%;
-    height:100%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-/* ==========================================================
-   PARCHMENT
-   ========================================================== */
-
-#paper{
-
-    width:96%;
-    height:96%;
-
-    display:flex;
-    flex-direction:column;
-
-    padding:28px 34px;
-
-    border:10px solid #5d4226;
-
-    border-radius:12px;
-
-    background:
-        radial-gradient(circle at top left,
-            rgba(255,255,255,.25),
-            rgba(255,255,255,0) 45%),
-
-        radial-gradient(circle at bottom right,
-            rgba(0,0,0,.18),
-            rgba(0,0,0,0) 45%),
-
-        linear-gradient(
-            180deg,
-            #ead7aa 0%,
-            #e5cf9c 45%,
-            #dcc28d 100%
-        );
-
-    box-shadow:
-        inset 0 0 60px rgba(70,40,10,.30),
-        inset 0 0 140px rgba(0,0,0,.18),
-        0 0 35px rgba(0,0,0,.55);
-}
-
-/* ==========================================================
-   HEADER
-   ========================================================== */
-
-#header{
-
-    text-align:center;
-}
-
-.crest{
-
-    font-size:40px;
-    color:#7b4f18;
-
-    margin-bottom:6px;
-}
-
-#title{
-
-    font-family:'UnifrakturCook',cursive;
-
-    font-size:44px;
-
-    letter-spacing:2px;
-
-    color:#4b2d0e;
-
-    text-shadow:
-        1px 1px 0 #f7e8c8;
-}
-
-#subtitle{
-
-    margin-top:6px;
-
-    font-size:15px;
+    font-size:28px;
 
     letter-spacing:3px;
 
-    text-transform:uppercase;
-
-    color:#5d4630;
 }
 
-hr{
 
-    border:none;
+h2 {
+
+    margin:5px;
+
+    font-size:14px;
+
+}
+
+
+.line {
 
     height:2px;
 
-    background:#7a5934;
+    background:#4a2a0c;
 
-    margin:18px 0;
+    margin:12px 0;
+
 }
 
-/* ==========================================================
-   DESCRIPTION
-   ========================================================== */
 
-#sentence{
+.section {
 
-    text-align:center;
+    margin:8px 0;
 
-    line-height:1.6;
-
-    font-size:18px;
-
-    margin-bottom:24px;
-
-    color:#3b2a18;
 }
 
-/* ==========================================================
-   SECTIONS
-   ========================================================== */
 
-.section{
+label {
 
-    margin-bottom:18px;
-}
+    display:block;
 
-.label{
-
-    font-size:15px;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    color:#704b25;
-
-    margin-bottom:6px;
-
-    font-weight:bold;
-}
-
-/* ==========================================================
-   PLAYER
-   ========================================================== */
-
-#playerName{
-
-    font-size:28px;
+    font-size:12px;
 
     font-weight:bold;
 
-    color:#2b1606;
-
-    word-break:break-word;
 }
 
-/* ==========================================================
-   WORD
-   ========================================================== */
 
-#word{
+#word {
 
-    font-size:36px;
-
-    font-weight:bold;
-
-    letter-spacing:10px;
-
-    text-align:center;
-
-    color:#2a1607;
-
-    margin-top:8px;
-}
-
-/* ==========================================================
-   LETTERS
-   ========================================================== */
-
-#letters{
-
-    font-size:24px;
+    font-size:26px;
 
     letter-spacing:8px;
 
-    min-height:32px;
 }
 
-/* ==========================================================
-   ATTEMPTS
-   ========================================================== */
 
-#remaining{
+#status {
 
-    font-size:42px;
-
-    font-weight:bold;
-
-    color:#632b18;
-}
-
-/* ==========================================================
-   STATUS
-   ========================================================== */
-
-#status{
-
-    text-align:center;
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    margin-top:6px;
-
-    color:#4c230e;
-}
-
-/* ==========================================================
-   PROGRESS BAR
-   ========================================================== */
-
-#progressContainer{
-
-    margin-top:24px;
-
-    width:100%;
-    height:34px;
-
-    border:3px solid #5d4226;
-
-    background:#c5a46c;
-
-    overflow:hidden;
-}
-
-#progressBar{
-
-    width:0%;
-
-    height:100%;
-
-    background:
-        repeating-linear-gradient(
-            45deg,
-            #5d2814,
-            #5d2814 12px,
-            #6d3118 12px,
-            #6d3118 24px
-        );
-
-    transition:width .5s ease;
-}
-
-/* ==========================================================
-   FOOTER
-   ========================================================== */
-
-#footer{
-
-    margin-top:auto;
-
-    padding-top:18px;
-
-    text-align:center;
-
-    border-top:2px solid #7c5a35;
-}
-
-#footerText{
-
-    font-style:italic;
+    margin-top:10px;
 
     font-size:18px;
 
-    color:#5d4630;
+    font-weight:bold;
 
-    margin-bottom:10px;
 }
 
-#boardId{
 
-    font-size:13px;
+#letters {
 
-    letter-spacing:2px;
-
-    color:#7a5d40;
+    display:none;
 }
 
-/* ==========================================================
-   WIN
-   ========================================================== */
 
-.win{
+.seal {
 
-    color:#1f5f2b !important;
-}
+    position:absolute;
 
-/* ==========================================================
-   LOSE
-   ========================================================== */
+    right:15px;
 
-.lose{
+    top:10px;
 
-    color:#7d1515 !important;
-}
+    font-size:35px;
 
-/* ==========================================================
-   PLAYING
-   ========================================================== */
-
-.playing{
-
-    color:#5b3518 !important;
 }
