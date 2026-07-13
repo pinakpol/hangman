@@ -1,130 +1,341 @@
-html, body {
-    width:100%;
-    height:100%;
+/*====================================================
+  Hangman's Gallows
+  Parchment Theme
+====================================================*/
+
+html,
+body{
     margin:0;
     padding:0;
+    width:100%;
+    height:100%;
     overflow:hidden;
-    background:#2b1a0d;
+
+    background:#2a1c10;
+
+    font-family:
+        "Georgia",
+        "Times New Roman",
+        serif;
+
+    color:#2d1a0b;
 }
 
 
-body {
+/*====================================================*/
+
+body{
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 
-.parchment {
+/*====================================================*/
+
+.parchment{
+
+    position:relative;
 
     width:100%;
     height:100%;
 
     box-sizing:border-box;
 
-    padding:20px;
-
-    background:
-    linear-gradient(
-        90deg,
-        #8b6a3d,
-        #d8b878,
-        #8b6a3d
-    );
-
-    color:#2b1608;
-
-    text-align:center;
-
     overflow:hidden;
 
-    font-family:Georgia,serif;
+    padding:22px;
+
+    background:
+
+    radial-gradient(
+        circle at top left,
+        rgba(255,255,255,.35),
+        rgba(255,255,255,0) 35%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(0,0,0,.18),
+        rgba(0,0,0,0) 45%
+    ),
+
+    linear-gradient(
+        180deg,
+        #ead6a4 0%,
+        #e0c88f 20%,
+        #d9be81 45%,
+        #ceb071 75%,
+        #c39f5d 100%
+    );
+
+    border:8px solid #6a4822;
+
+    box-shadow:
+        inset 0 0 40px rgba(0,0,0,.28),
+        inset 0 0 120px rgba(255,255,255,.15);
+
 }
 
 
-h1 {
+/*====================================================*/
+/* Decorative Border */
+/*====================================================*/
+
+.parchment::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:12px;
+    left:12px;
+    right:12px;
+    bottom:12px;
+
+    border:2px solid
+    rgba(70,40,15,.45);
+
+    pointer-events:none;
+}
+
+
+.parchment::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:18px;
+    left:18px;
+    right:18px;
+    bottom:18px;
+
+    border:1px dashed
+    rgba(80,45,20,.25);
+
+    pointer-events:none;
+}
+
+
+/*====================================================*/
+
+.seal{
+
+    position:absolute;
+
+    right:18px;
+
+    top:12px;
+
+    font-size:42px;
+
+    opacity:.22;
+
+    transform:rotate(-12deg);
+}
+
+
+/*====================================================*/
+
+h1{
 
     margin:0;
 
-    font-size:28px;
+    text-align:center;
 
-    letter-spacing:3px;
+    font-size:30px;
 
+    letter-spacing:4px;
+
+    color:#421b08;
+
+    text-shadow:
+        1px 1px rgba(255,255,255,.35);
 }
 
 
-h2 {
+/*====================================================*/
 
-    margin:5px;
+h2{
 
-    font-size:14px;
+    margin:4px 0 12px;
 
+    text-align:center;
+
+    font-size:15px;
+
+    font-style:italic;
+
+    color:#5d3b17;
 }
 
 
-.line {
+/*====================================================*/
+
+.line{
 
     height:2px;
 
-    background:#4a2a0c;
-
     margin:12px 0;
 
+    background:
+
+    linear-gradient(
+        to right,
+        transparent,
+        #5d3916,
+        transparent
+    );
 }
 
 
-.section {
+/*====================================================*/
 
-    margin:8px 0;
+.section{
 
+    margin:10px 0;
 }
 
 
-label {
+/*====================================================*/
+
+label{
 
     display:block;
+
+    margin-bottom:4px;
 
     font-size:12px;
 
     font-weight:bold;
 
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    color:#593816;
 }
 
 
-#word {
+/*====================================================*/
 
-    font-size:26px;
-
-    letter-spacing:8px;
-
-}
-
-
-#status {
-
-    margin-top:10px;
+#status{
 
     font-size:18px;
 
     font-weight:bold;
 
+    text-align:center;
+
+    color:#5b1408;
 }
 
 
-#letters {
+/*====================================================*/
 
-    display:none;
+#category,
+#hint,
+#attempts,
+#wrong{
+
+    font-size:16px;
+
+    text-align:center;
+
+    word-wrap:break-word;
 }
 
 
-.seal {
+/*====================================================*/
 
-    position:absolute;
+#word{
 
-    right:15px;
+    text-align:center;
 
-    top:10px;
+    font-size:32px;
 
-    font-size:35px;
+    font-weight:bold;
+
+    letter-spacing:8px;
+
+    color:#2b1204;
+
+    min-height:42px;
+}
+
+
+/*====================================================*/
+
+#bar{
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #2d7d2d,
+        #69b84b
+    );
+
+    transition:width .35s ease;
+}
+
+
+/*====================================================*/
+
+#wrong{
+
+    color:#6f1b0c;
+
+    font-weight:bold;
+
+    min-height:24px;
+}
+
+
+/*====================================================*/
+/* Small Screens / MOAP */
+/*====================================================*/
+
+@media (max-width:700px){
+
+    .parchment{
+
+        padding:16px;
+    }
+
+    h1{
+
+        font-size:24px;
+    }
+
+    h2{
+
+        font-size:13px;
+    }
+
+    #word{
+
+        font-size:24px;
+
+        letter-spacing:5px;
+    }
+
+    #status{
+
+        font-size:16px;
+    }
+
+    #category,
+    #hint,
+    #attempts,
+    #wrong{
+
+        font-size:14px;
+    }
 
 }
