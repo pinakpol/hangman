@@ -10,7 +10,7 @@ const games = new GameManager();
 
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static("Public"));
 
 
 //----------------------------------------
