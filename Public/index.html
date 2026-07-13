@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
 
-<title>Execution Notice</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Hangman's Gallows</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -21,123 +15,100 @@
 
 <body>
 
-<div id="paper">
+<div class="parchment">
 
-    <div id="crest">⚜</div>
+<div class="seal">☠</div>
 
-    <div id="title">
-        EXECUTION NOTICE
-    </div>
+<h1>EXECUTION NOTICE</h1>
 
-    <div id="subtitle">
-        BY ORDER OF THE CROWN
-    </div>
+<h2>By Order of the Crown</h2>
 
-    <hr>
+<div class="line"></div>
 
-    <div id="notice">
+<div class="section">
 
-        Let it be known throughout the realm that the
-        condemned shall be granted mercy only if the
-        hidden word is revealed before the final sentence.
+<label>Prisoner Status</label>
 
-    </div>
+<div id="status">
+AWAITING PRISONER
+</div>
 
-    <div class="section">
+</div>
 
-        <div class="label">
-            CRIME
-        </div>
+<div class="section">
 
-        <div id="category">
-            —
-        </div>
+<label>Crime</label>
 
-    </div>
+<div id="category">
+---
+</div>
 
-    <div class="section">
+</div>
 
-        <div class="label">
-            WITNESS STATEMENT
-        </div>
+<div class="section">
 
-        <div id="hint">
-            —
-        </div>
+<label>Evidence</label>
 
-    </div>
+<div id="hint">
+---
+</div>
 
-    <div class="section">
+</div>
 
-        <div class="label">
-            SECRET WORD
-        </div>
+<div class="line"></div>
 
-        <div id="word">
-            —
-        </div>
+<div class="section">
 
-    </div>
+<label>Sentence</label>
 
-    <div class="section">
+<div id="word">
+_ _ _ _ _
+</div>
 
-        <div class="label">
-            WRONG LETTERS
-        </div>
+</div>
 
-        <div id="wrong">
-            —
-        </div>
+<div class="line"></div>
 
-    </div>
+<div class="section">
 
-    <div class="section">
+<label>Remaining Mercy</label>
 
-        <div class="label">
-            ATTEMPTS REMAINING
-        </div>
+<div id="attempts">
+6 / 6
+</div>
 
-        <div id="attempts">
-            6
-        </div>
+<div style="
+width:100%;
+height:14px;
+border:1px solid #3b2411;
+margin-top:8px;
+">
 
-    </div>
+<div id="bar"
+style="
+height:100%;
+width:100%;
+background:#5f8f3f;
+">
+</div>
 
-    <div class="section">
+</div>
 
-        <div class="label">
-            SENTENCE
-        </div>
+</div>
 
-        <div id="status">
-            Awaiting Prisoner
-        </div>
+<div class="section">
 
-    </div>
+<label>Failed Testimony</label>
 
-    <div id="progressBox">
+<div id="wrong">
+None
+</div>
 
-        <div id="progress"></div>
-
-    </div>
-
-    <div id="footer">
-
-        <div id="footerText">
-            Truth shall decide the prisoner's fate.
-
-        </div>
-
-        <div id="boardID">
-            Board
-        </div>
-
-    </div>
+</div>
 
 </div>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
