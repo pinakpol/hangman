@@ -1,149 +1,121 @@
 //====================================================
-// Second Life Hangman
-// Execution Notice
-// public/script.js
+// Hangman's Gallows
+// MOAP Client V1
 //====================================================
-
-const params = new URLSearchParams(window.location.search);
-
-const BOARD = params.get("board");
-
-//----------------------------------------------------
-// Elements
-//----------------------------------------------------
 
 const category = document.getElementById("category");
 const hint = document.getElementById("hint");
 const word = document.getElementById("word");
-const wrong = document.getElementById("wrong");
 const attempts = document.getElementById("attempts");
+const wrong = document.getElementById("wrong");
 const status = document.getElementById("status");
-const progress = document.getElementById("progress");
-const boardID = document.getElementById("boardID");
+const bar = document.getElementById("bar");
 
-//----------------------------------------------------
+//----------------------------------------
+// Get Board UUID from URL
+//----------------------------------------
 
-boardID.textContent =
-    "Board : " + (BOARD || "Unknown");
+const params = new URLSearchParams(window.location.search);
 
-//----------------------------------------------------
+let board = params.get("board");
 
-function updateProgress(remaining, maximum)
+//----------------------------------------
+
+if (!board)
 {
-    let percent = (remaining / maximum) * 100;
+    status.innerHTML = "NO BOARD ID";
 
-    if (percent < 0) percent = 0;
-    if (percent > 100) percent = 100;
-
-    progress.style.width = percent + "%";
+    throw "Missing board ID";
 }
 
-//----------------------------------------------------
+//----------------------------------------
 
-async function loadState()
+async function update()
 {
-    if (!BOARD)
-        return;
-
     try
     {
-        const response = await fetch(
-
-            "/state?board=" + encodeURIComponent(BOARD),
-
-            {
-                cache: "no-store"
-            }
-
+        const r =
+        await fetch(
+            "/state?board=" +
+            encodeURIComponent(board)
         );
 
-        if (!response.ok)
+        if (!r.ok)
             return;
 
-        const data = await response.json();
+        const data =
+        await r.json();
 
-        //--------------------------------------------
-
-        category.textContent =
-            data.category || "—";
-
-        hint.textContent =
-            data.hint || "—";
-
-        word.textContent =
-            data.display || "";
-
-        attempts.textContent =
-            data.attempts;
-
-        //--------------------------------------------
-
-        if (data.wrong.length)
-            wrong.textContent =
-                data.wrong.join(" ");
-        else
-            wrong.textContent = "None";
-
-        //--------------------------------------------
-
-        updateProgress(
-            data.attempts,
-            data.maxAttempts
-        );
-
-        //--------------------------------------------
-
-        status.className = "";
-
-        switch (data.status)
-        {
-
-            case "idle":
-
-                status.textContent =
-                    "Awaiting Prisoner";
-
-                break;
-
-            case "playing":
-
-                status.textContent =
-                    "Sentence Pending";
-
-                status.classList.add("playing");
-
-                break;
-
-            case "win":
-
-                status.textContent =
-                    "Royal Pardon Granted";
-
-                status.classList.add("win");
-
-                break;
-
-            case "lose":
-
-                status.textContent =
-                    "Sentence Carried Out";
-
-                status.classList.add("lose");
-
-                break;
-
-        }
-
+        draw(data);
     }
-    catch (err)
+    catch(e)
     {
-        console.log(err);
+        status.innerHTML = "SERVER OFFLINE";
     }
-
 }
 
-//----------------------------------------------------
 
-loadState();
+//----------------------------------------
 
-setInterval(loadState, 1000);
+function draw(data)
+{
+    category.innerHTML =
+        data.category || "---";
+
+    hint.innerHTML =
+        data.hint || "---";
+
+    word.innerHTML =
+        data.display || "";
+
+    wrong.innerHTML =
+        data.wrong.join(" ");
+
+    attempts.innerHTML =
+        data.attempts +
+        " / " +
+        data.maxAttempts;
+
+    let percent =
+        (data.attempts /
+        data.maxAttempts) * 100;
+
+    bar.style.width =
+        percent + "%";
+
+    switch(data.status)
+    {
+        case "idle":
+            status.innerHTML =
+            "AWAITING PRISONER";
+            break;
+
+        case "playing":
+            status.innerHTML =
+            "TRIAL IN PROGRESS";
+            break;
+
+        case "win":
+            status.innerHTML =
+            "PRISONER PARDONED";
+            break;
+
+        case "lose":
+            status.innerHTML =
+            "SENTENCE CARRIED OUT";
+            break;
+
+        default:
+            status.innerHTML = "";
+    }
+}
+
+
+//----------------------------------------
+
+update();
+
+setInterval(
+    update,
+    1000
+);
