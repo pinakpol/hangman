@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
+<meta
+name="viewport"
 content="width=device-width,initial-scale=1.0">
 
 <title>Hangman's Gallows</title>
 
-<link rel="stylesheet" href="style.css">
+<link
+rel="stylesheet"
+href="style.css">
 
 </head>
 
@@ -21,13 +25,24 @@ content="width=device-width,initial-scale=1.0">
 
 <h1>EXECUTION NOTICE</h1>
 
-<h2>By Order of the Crown</h2>
+<h2>By Order of the Royal Court</h2>
+
+<div class="line"></div>
+
+<div class="notice">
+
+This document records the official judgement
+against the accused prisoner. Mercy shall be
+granted only if every hidden letter is revealed
+before the final sentence is carried out.
+
+</div>
 
 <div class="line"></div>
 
 <div class="section">
 
-<label>Prisoner Status</label>
+<label>Prisoner's Status</label>
 
 <div id="status">
 AWAITING PRISONER
@@ -37,7 +52,7 @@ AWAITING PRISONER
 
 <div class="section">
 
-<label>Crime</label>
+<label>Crime Category</label>
 
 <div id="category">
 ---
@@ -59,7 +74,7 @@ AWAITING PRISONER
 
 <div class="section">
 
-<label>Sentence</label>
+<label>Final Sentence</label>
 
 <div id="word">
 _ _ _ _ _
@@ -71,26 +86,15 @@ _ _ _ _ _
 
 <div class="section">
 
-<label>Remaining Mercy</label>
+<label>Mercy Remaining</label>
 
 <div id="attempts">
 6 / 6
 </div>
 
-<div style="
-width:100%;
-height:14px;
-border:1px solid #3b2411;
-margin-top:8px;
-">
+<div class="progress">
 
-<div id="bar"
-style="
-height:100%;
-width:100%;
-background:#5f8f3f;
-">
-</div>
+<div id="bar"></div>
 
 </div>
 
@@ -98,11 +102,19 @@ background:#5f8f3f;
 
 <div class="section">
 
-<label>Failed Testimony</label>
+<label>False Testimony</label>
 
 <div id="wrong">
 None
 </div>
+
+</div>
+
+<div class="line"></div>
+
+<div class="footer">
+
+Royal Seal of the Kingdom
 
 </div>
 
@@ -111,4 +123,5 @@ None
 <script src="script.js"></script>
 
 </body>
+
 </html>
