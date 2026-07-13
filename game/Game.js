@@ -53,10 +53,13 @@ class Game {
 
     guess(letter) {
 
-        if (this.status != "playing")
+        if (this.status !== "playing")
             return;
 
-        letter = letter.toUpperCase();
+        letter = String(letter).toUpperCase();
+
+        if (letter.length !== 1)
+            return;
 
         if (this.used.includes(letter))
             return;
@@ -81,7 +84,6 @@ class Game {
             if (!this.used.includes(c)) {
 
                 win = false;
-
                 break;
 
             }
@@ -99,7 +101,7 @@ class Game {
 
         for (const c of this.word) {
 
-            if (this.used.includes(c))
+            if (this.used.includes(c) || this.status === "lose")
                 s += c + " ";
             else
                 s += "_ ";
@@ -169,8 +171,7 @@ class Game {
 
             letters: this.letterStates(),
 
-            hangmanStage:
-                this.maxAttempts - this.remaining
+            hangmanStage: this.maxAttempts - this.remaining
 
         };
 
