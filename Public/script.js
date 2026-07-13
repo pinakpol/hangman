@@ -1,6 +1,6 @@
 //====================================================
 // Hangman's Gallows
-// MOAP Client V1
+// MOAP Client V2
 //====================================================
 
 const category = document.getElementById("category");
@@ -11,107 +11,140 @@ const wrong = document.getElementById("wrong");
 const status = document.getElementById("status");
 const bar = document.getElementById("bar");
 
-//----------------------------------------
-// Get Board UUID from URL
-//----------------------------------------
+//====================================================
+// Board ID
+//====================================================
 
 const params = new URLSearchParams(window.location.search);
 
-let board = params.get("board");
+const board = params.get("board");
 
-//----------------------------------------
+//====================================================
 
 if (!board)
 {
-    status.innerHTML = "NO BOARD ID";
+    status.innerHTML = "INVALID BOARD";
 
-    throw "Missing board ID";
+    throw new Error("Board ID missing");
 }
 
-//----------------------------------------
+//====================================================
+
+let previousStatus = "";
+
+//====================================================
 
 async function update()
 {
     try
     {
-        const r =
+        const response =
         await fetch(
             "/state?board=" +
-            encodeURIComponent(board)
+            encodeURIComponent(board),
+            {
+                cache:"no-store"
+            }
         );
 
-        if (!r.ok)
+        if(!response.ok)
             return;
 
         const data =
-        await r.json();
+        await response.json();
 
         draw(data);
     }
     catch(e)
     {
-        status.innerHTML = "SERVER OFFLINE";
+        status.innerHTML =
+        "SERVER OFFLINE";
     }
 }
 
-
-//----------------------------------------
+//====================================================
 
 function draw(data)
 {
-    category.innerHTML =
+    category.textContent =
         data.category || "---";
 
-    hint.innerHTML =
+    hint.textContent =
         data.hint || "---";
 
-    word.innerHTML =
+    word.textContent =
         data.display || "";
 
-    wrong.innerHTML =
-        data.wrong.join(" ");
-
-    attempts.innerHTML =
+    attempts.textContent =
         data.attempts +
         " / " +
         data.maxAttempts;
+
+    wrong.textContent =
+        data.wrong.length ?
+        data.wrong.join(" ") :
+        "None";
+
+    //------------------------------------------------
 
     let percent =
         (data.attempts /
         data.maxAttempts) * 100;
 
+    if(percent < 0)
+        percent = 0;
+
     bar.style.width =
         percent + "%";
+
+    //------------------------------------------------
 
     switch(data.status)
     {
         case "idle":
-            status.innerHTML =
+
+            status.textContent =
             "AWAITING PRISONER";
+
             break;
 
         case "playing":
-            status.innerHTML =
+
+            status.textContent =
             "TRIAL IN PROGRESS";
+
             break;
 
         case "win":
-            status.innerHTML =
+
+            status.textContent =
             "PRISONER PARDONED";
+
             break;
 
         case "lose":
-            status.innerHTML =
+
+            status.textContent =
             "SENTENCE CARRIED OUT";
+
             break;
 
         default:
-            status.innerHTML = "";
+
+            status.textContent =
+            "";
+    }
+
+    //------------------------------------------------
+
+    if(previousStatus != data.status)
+    {
+        previousStatus =
+        data.status;
     }
 }
 
-
-//----------------------------------------
+//====================================================
 
 update();
 
