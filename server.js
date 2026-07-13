@@ -1,32 +1,54 @@
 const express = require("express");
 
-const Game = require("./game/Game");
+const GameManager = require("./game/GameManager");
 
 const app = express();
 
-const game = new Game();
-
 const PORT = process.env.PORT || 3000;
+
+const games = new GameManager();
 
 app.use(express.json());
 
 app.use(express.static("public"));
 
+
+//----------------------------------------
+// Categories
+//----------------------------------------
+
 app.get("/categories", (req, res) => {
 
-    res.json(
+    let game = games.getGame("TEMP");
 
-        game.words.getCategories()
-
-    );
+    res.json(game.words.getCategories());
 
 });
 
+
+//----------------------------------------
+// Start Game
+//----------------------------------------
+
 app.post("/start", (req, res) => {
 
-    let category = req.body.category || "animals";
+    const board = req.body.board;
 
-    if (!game.start(category)) {
+    const category = req.body.category || "animals";
+
+    if (!board) {
+
+        return res.status(400).json({
+
+            error: "Missing board ID"
+
+        });
+
+    }
+
+    const ok = games.start(board, category);
+
+    if (!ok) {
 
         return res.status(400).json({
 
@@ -38,60 +60,127 @@ app.post("/start", (req, res) => {
 
     res.json(
 
-        game.state()
+        games.state(board)
 
     );
 
 });
+
+
+//----------------------------------------
+// Guess Letter
+//----------------------------------------
 
 app.post("/guess", (req, res) => {
 
-    game.guess(
+    const board = req.body.board;
 
-        req.body.letter
+    const letter = req.body.letter;
 
-    );
+    if (!board) {
+
+        return res.status(400).json({
+
+            error: "Missing board ID"
+
+        });
+
+    }
+
+    games.guess(board, letter);
 
     res.json(
 
-        game.state()
+        games.state(board)
 
     );
 
 });
+
+
+//----------------------------------------
+// Current State
+//----------------------------------------
 
 app.get("/state", (req, res) => {
 
+    const board = req.query.board;
+
+    if (!board) {
+
+        return res.status(400).json({
+
+            error: "Missing board ID"
+
+        });
+
+    }
+
     res.json(
 
-        game.state()
+        games.state(board)
 
     );
 
 });
+
+
+//----------------------------------------
+// Reset
+//----------------------------------------
 
 app.post("/reset", (req, res) => {
 
-    game.reset();
+    const board = req.body.board;
+
+    if (!board) {
+
+        return res.status(400).json({
+
+            error: "Missing board ID"
+
+        });
+
+    }
+
+    games.reset(board);
 
     res.json(
 
-        game.state()
+        games.state(board)
 
     );
 
 });
+
+app.post("/boardid", (req, res) => {
+
+    const board = req.body.board;
+
+    if (!board) {
+        return res.json({ ok: false });
+    }
+
+    games.getGame(board);
+
+    res.json({
+        ok: true
+    });
+
+});
+
+//----------------------------------------
 
 app.listen(PORT, () => {
 
     console.log("");
 
-    console.log("===================================");
+    console.log("====================================");
 
-    console.log(" Hangman Server Running");
+    console.log(" Second Life Hangman Server");
 
-    console.log(" http://localhost:" + PORT);
+    console.log(" Running on Port " + PORT);
 
-    console.log("===================================");
+    console.log("====================================");
 
 });

@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
 
-<title>Hangman</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Execution Notice</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -13,115 +21,122 @@
 
 <body>
 
-<div id="board">
+<div id="paper">
 
-<h1>HANGMAN</h1>
+    <div id="crest">⚜</div>
 
-<div id="category"></div>
+    <div id="title">
+        EXECUTION NOTICE
+    </div>
 
-<div id="hint"></div>
+    <div id="subtitle">
+        BY ORDER OF THE CROWN
+    </div>
 
-<div id="hangman">
+    <hr>
 
-<svg width="350" height="350" viewBox="0 0 350 350">
+    <div id="notice">
 
-<!-- Base -->
-<line x1="40" y1="330" x2="220" y2="330"
-stroke="black"
-stroke-width="8"/>
+        Let it be known throughout the realm that the
+        condemned shall be granted mercy only if the
+        hidden word is revealed before the final sentence.
 
-<!-- Pole -->
-<line x1="80" y1="330" x2="80" y2="30"
-stroke="black"
-stroke-width="8"/>
+    </div>
 
-<!-- Top -->
-<line x1="80" y1="30" x2="220" y2="30"
-stroke="black"
-stroke-width="8"/>
+    <div class="section">
 
-<!-- Rope -->
-<line x1="220" y1="30" x2="220" y2="70"
-stroke="black"
-stroke-width="4"/>
+        <div class="label">
+            CRIME
+        </div>
 
-<!-- Head -->
-<circle id="head"
-cx="220"
-cy="95"
-r="25"
-stroke="black"
-stroke-width="5"
-fill="none"
-style="display:none"/>
+        <div id="category">
+            —
+        </div>
 
-<!-- Body -->
-<line id="body"
-x1="220"
-y1="120"
-x2="220"
-y2="190"
-stroke="black"
-stroke-width="5"
-style="display:none"/>
+    </div>
 
-<!-- Left Arm -->
-<line id="larm"
-x1="220"
-y1="140"
-x2="185"
-y2="165"
-stroke="black"
-stroke-width="5"
-style="display:none"/>
+    <div class="section">
 
-<!-- Right Arm -->
-<line id="rarm"
-x1="220"
-y1="140"
-x2="255"
-y2="165"
-stroke="black"
-stroke-width="5"
-style="display:none"/>
+        <div class="label">
+            WITNESS STATEMENT
+        </div>
 
-<!-- Left Leg -->
-<line id="lleg"
-x1="220"
-y1="190"
-x2="190"
-y2="245"
-stroke="black"
-stroke-width="5"
-style="display:none"/>
+        <div id="hint">
+            —
+        </div>
 
-<!-- Right Leg -->
-<line id="rleg"
-x1="220"
-y1="190"
-x2="250"
-y2="245"
-stroke="black"
-stroke-width="5"
-style="display:none"/>
+    </div>
 
-</svg>
+    <div class="section">
+
+        <div class="label">
+            SECRET WORD
+        </div>
+
+        <div id="word">
+            —
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <div class="label">
+            WRONG LETTERS
+        </div>
+
+        <div id="wrong">
+            —
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <div class="label">
+            ATTEMPTS REMAINING
+        </div>
+
+        <div id="attempts">
+            6
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <div class="label">
+            SENTENCE
+        </div>
+
+        <div id="status">
+            Awaiting Prisoner
+        </div>
+
+    </div>
+
+    <div id="progressBox">
+
+        <div id="progress"></div>
+
+    </div>
+
+    <div id="footer">
+
+        <div id="footerText">
+            Truth shall decide the prisoner's fate.
+
+        </div>
+
+        <div id="boardID">
+            Board
+        </div>
+
+    </div>
 
 </div>
 
-<div id="word"></div>
-
-<div id="attempts"></div>
-
-<div id="wrong"></div>
-
-<div id="letters"></div>
-
-<button id="startBtn">Start Game</button>
-
-</div>
-
-<script src="game.js"></script>
+<script src="script.js"></script>
 
 </body>
 
