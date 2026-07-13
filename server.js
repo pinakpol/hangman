@@ -1,5 +1,4 @@
 const express = require("express");
-
 const GameManager = require("./game/GameManager");
 
 const app = express();
@@ -9,15 +8,13 @@ const PORT = process.env.PORT || 3000;
 const games = new GameManager();
 
 app.use(express.json());
-
 app.use(express.static("Public"));
-
 
 //----------------------------------------
 // Categories
 //----------------------------------------
 
-app.get("/categories", (req, res) => {
+app.get("/categories",(req,res)=>{
 
     let game = games.getGame("TEMP");
 
@@ -25,162 +22,155 @@ app.get("/categories", (req, res) => {
 
 });
 
-
 //----------------------------------------
-// Start Game
+// Start
 //----------------------------------------
 
-app.post("/start", (req, res) => {
+app.post("/start",(req,res)=>{
 
     const board = req.body.board;
-
     const category = req.body.category || "animals";
 
-    if (!board) {
-
+    if(!board)
+    {
         return res.status(400).json({
-
-            error: "Missing board ID"
-
+            error:"Missing board ID"
         });
-
     }
 
-    const ok = games.start(board, category);
-
-    if (!ok) {
-
+    if(!games.start(board,category))
+    {
         return res.status(400).json({
-
-            error: "Category not found"
-
+            error:"Category not found"
         });
-
     }
 
     res.json(
-
         games.state(board)
-
     );
 
 });
 
-
 //----------------------------------------
-// Guess Letter
+// Guess
 //----------------------------------------
 
-app.post("/guess", (req, res) => {
+app.post("/guess",(req,res)=>{
 
     const board = req.body.board;
-
     const letter = req.body.letter;
 
-    if (!board) {
-
+    if(!board)
+    {
         return res.status(400).json({
-
-            error: "Missing board ID"
-
+            error:"Missing board ID"
         });
-
     }
 
-    games.guess(board, letter);
+    games.guess(board,letter);
 
     res.json(
-
         games.state(board)
-
     );
 
 });
 
-
 //----------------------------------------
-// Current State
+// State
 //----------------------------------------
 
-app.get("/state", (req, res) => {
+app.get("/state",(req,res)=>{
 
     const board = req.query.board;
 
-    if (!board) {
-
+    if(!board)
+    {
         return res.status(400).json({
-
-            error: "Missing board ID"
-
+            error:"Missing board ID"
         });
-
     }
 
     res.json(
-
         games.state(board)
-
     );
 
 });
 
+//----------------------------------------
+// Letters (LSL Friendly)
+//----------------------------------------
+
+app.get("/letters",(req,res)=>{
+
+    const board = req.query.board;
+
+    if(!board)
+    {
+        return res.send("");
+    }
+
+    const state =
+        games.state(board);
+
+    res.send(
+        state.unusedLetters.join("")
+    );
+
+});
+
+//----------------------------------------
+// Status (LSL Friendly)
+//----------------------------------------
+
+app.get("/status",(req,res)=>{
+
+    const board = req.query.board;
+
+    if(!board)
+    {
+        return res.send("idle");
+    }
+
+    const state =
+        games.state(board);
+
+    res.send(
+        state.status
+    );
+
+});
 
 //----------------------------------------
 // Reset
 //----------------------------------------
 
-app.post("/reset", (req, res) => {
+app.post("/reset",(req,res)=>{
 
     const board = req.body.board;
 
-    if (!board) {
-
+    if(!board)
+    {
         return res.status(400).json({
-
-            error: "Missing board ID"
-
+            error:"Missing board ID"
         });
-
     }
 
     games.reset(board);
 
     res.json(
-
         games.state(board)
-
     );
-
-});
-
-app.post("/boardid", (req, res) => {
-
-    const board = req.body.board;
-
-    if (!board) {
-        return res.json({ ok: false });
-    }
-
-    games.getGame(board);
-
-    res.json({
-        ok: true
-    });
 
 });
 
 //----------------------------------------
 
-app.listen(PORT, () => {
+app.listen(PORT,()=>{
 
     console.log("");
-
-    console.log("====================================");
-
-    console.log(" Second Life Hangman Server");
-
-    console.log(" Running on Port " + PORT);
-
-    console.log("====================================");
+    console.log("==================================");
+    console.log(" Hangman's Gallows Server");
+    console.log(" Port : " + PORT);
+    console.log("==================================");
 
 });
