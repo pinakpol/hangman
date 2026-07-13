@@ -1,19 +1,22 @@
 const WordManager = require("./WordManager");
 
-class Game {
-
-    constructor() {
-
+class Game
+{
+    constructor()
+    {
         this.words = new WordManager();
 
         this.maxAttempts = 6;
 
-        this.reset();
+        this.alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+        this.reset();
     }
 
-    reset() {
+    //------------------------------------------------
 
+    reset()
+    {
         this.status = "idle";
 
         this.category = "";
@@ -25,14 +28,15 @@ class Game {
         this.used = [];
 
         this.remaining = this.maxAttempts;
-
     }
 
-    start(category) {
+    //------------------------------------------------
 
+    start(category)
+    {
         const data = this.words.random(category);
 
-        if (!data)
+        if(!data)
             return false;
 
         this.category = category;
@@ -48,135 +52,172 @@ class Game {
         this.status = "playing";
 
         return true;
-
     }
 
-    guess(letter) {
+    //------------------------------------------------
 
-        if (this.status !== "playing")
+    guess(letter)
+    {
+        if(this.status != "playing")
             return;
 
-        letter = String(letter).toUpperCase();
-
-        if (letter.length !== 1)
+        if(!letter)
             return;
 
-        if (this.used.includes(letter))
+        letter = letter.toUpperCase();
+
+        if(this.used.includes(letter))
             return;
 
         this.used.push(letter);
 
-        if (!this.word.includes(letter))
+        if(!this.word.includes(letter))
             this.remaining--;
 
-        if (this.remaining <= 0) {
-
+        if(this.remaining <= 0)
+        {
             this.status = "lose";
-
             return;
-
         }
 
         let win = true;
 
-        for (const c of this.word) {
+        for(const c of this.word)
+        {
+            if(c == " ")
+                continue;
 
-            if (!this.used.includes(c)) {
-
+            if(!this.used.includes(c))
+            {
                 win = false;
                 break;
-
             }
-
         }
 
-        if (win)
+        if(win)
             this.status = "win";
-
     }
 
-    displayWord() {
+    //------------------------------------------------
 
+    displayWord()
+    {
         let s = "";
 
-        for (const c of this.word) {
-
-            if (this.used.includes(c) || this.status === "lose")
+        for(const c of this.word)
+        {
+            if(c == " ")
+            {
+                s += "  ";
+            }
+            else if(this.used.includes(c))
+            {
                 s += c + " ";
+            }
             else
+            {
                 s += "_ ";
-
+            }
         }
 
         return s.trim();
-
     }
 
-    wrongLetters() {
+    //------------------------------------------------
 
-        return this.used.filter(x => !this.word.includes(x));
-
+    wrongLetters()
+    {
+        return this.used.filter(
+            x => !this.word.includes(x)
+        );
     }
 
-    letterStates() {
+    //------------------------------------------------
 
-        const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    correctLetters()
+    {
+        return this.used.filter(
+            x => this.word.includes(x)
+        );
+    }
 
+    //------------------------------------------------
+
+    unusedLetters()
+    {
         let list = [];
 
-        for (const c of alphabet) {
-
-            let state = "unused";
-
-            if (this.used.includes(c)) {
-
-                if (this.word.includes(c))
-                    state = "correct";
-                else
-                    state = "wrong";
-
-            }
-
-            list.push({
-
-                letter: c,
-
-                state: state
-
-            });
-
+        for(const c of this.alphabet)
+        {
+            if(!this.used.includes(c))
+                list.push(c);
         }
 
         return list;
-
     }
 
-    state() {
+    //------------------------------------------------
 
+    message()
+    {
+        switch(this.status)
+        {
+            case "idle":
+                return "Awaiting Prisoner";
+
+            case "playing":
+                return "Trial In Progress";
+
+            case "win":
+                return "Prisoner Pardoned";
+
+            case "lose":
+                return "Sentence Carried Out";
+        }
+
+        return "";
+    }
+
+    //------------------------------------------------
+
+    state()
+    {
         return {
 
-            status: this.status,
+            status : this.status,
 
-            category: this.category,
+            message : this.message(),
 
-            hint: this.hint,
+            canGuess :
+                this.status == "playing",
 
-            display: this.displayWord(),
+            category : this.category,
 
-            attempts: this.remaining,
+            hint : this.hint,
 
-            maxAttempts: this.maxAttempts,
+            display : this.displayWord(),
 
-            wrong: this.wrongLetters(),
+            attempts : this.remaining,
 
-            letters: this.letterStates(),
+            maxAttempts : this.maxAttempts,
 
-            hangmanStage: this.maxAttempts - this.remaining
+            hangmanStage :
+                this.maxAttempts -
+                this.remaining,
 
+            wrong :
+                this.wrongLetters(),
+
+            wrongLetters :
+                this.wrongLetters(),
+
+            correctLetters :
+                this.correctLetters(),
+
+            unusedLetters :
+                this.unusedLetters()
         };
-
     }
-
 }
 
 module.exports = Game;
