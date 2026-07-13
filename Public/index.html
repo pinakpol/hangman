@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Hangman</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="board">
+
+<h1>HANGMAN</h1>
+
+<div id="category"></div>
+
+<div id="hint"></div>
+
+<div id="hangman">
+
+<svg width="350" height="350" viewBox="0 0 350 350">
+
+<!-- Base -->
+<line x1="40" y1="330" x2="220" y2="330"
+stroke="black"
+stroke-width="8"/>
+
+<!-- Pole -->
+<line x1="80" y1="330" x2="80" y2="30"
+stroke="black"
+stroke-width="8"/>
+
+<!-- Top -->
+<line x1="80" y1="30" x2="220" y2="30"
+stroke="black"
+stroke-width="8"/>
+
+<!-- Rope -->
+<line x1="220" y1="30" x2="220" y2="70"
+stroke="black"
+stroke-width="4"/>
+
+<!-- Head -->
+<circle id="head"
+cx="220"
+cy="95"
+r="25"
+stroke="black"
+stroke-width="5"
+fill="none"
+style="display:none"/>
+
+<!-- Body -->
+<line id="body"
+x1="220"
+y1="120"
+x2="220"
+y2="190"
+stroke="black"
+stroke-width="5"
+style="display:none"/>
+
+<!-- Left Arm -->
+<line id="larm"
+x1="220"
+y1="140"
+x2="185"
+y2="165"
+stroke="black"
+stroke-width="5"
+style="display:none"/>
+
+<!-- Right Arm -->
+<line id="rarm"
+x1="220"
+y1="140"
+x2="255"
+y2="165"
+stroke="black"
+stroke-width="5"
+style="display:none"/>
+
+<!-- Left Leg -->
+<line id="lleg"
+x1="220"
+y1="190"
+x2="190"
+y2="245"
+stroke="black"
+stroke-width="5"
+style="display:none"/>
+
+<!-- Right Leg -->
+<line id="rleg"
+x1="220"
+y1="190"
+x2="250"
+y2="245"
+stroke="black"
+stroke-width="5"
+style="display:none"/>
+
+</svg>
+
+</div>
+
+<div id="word"></div>
+
+<div id="attempts"></div>
+
+<div id="wrong"></div>
+
+<div id="letters"></div>
+
+<button id="startBtn">Start Game</button>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+
+</html>

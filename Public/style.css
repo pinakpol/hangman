@@ -1,0 +1,147 @@
+body{
+
+    margin:0;
+
+    background:#303030;
+
+    font-family:Arial;
+
+}
+
+#board{
+
+    width:1000px;
+
+    margin:20px auto;
+
+    background:#f3e5b7;
+
+    border:10px solid #5b3b12;
+
+    padding:20px;
+
+    box-sizing:border-box;
+
+    text-align:center;
+
+}
+
+h1{
+
+    margin:10px;
+
+}
+
+#category{
+
+    font-size:28px;
+
+    margin-top:20px;
+
+}
+
+#hint{
+
+    font-size:22px;
+
+    color:#555;
+
+    margin-top:10px;
+
+}
+
+#word{
+
+    font-size:60px;
+
+    letter-spacing:10px;
+
+    margin-top:40px;
+
+}
+
+#attempts{
+
+    font-size:28px;
+
+    margin-top:30px;
+
+}
+
+#wrong{
+
+    font-size:24px;
+
+    margin-top:10px;
+
+    color:red;
+
+}
+
+#letters{
+
+    width:900px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:10px;
+
+}
+
+.letter{
+
+    background:white;
+
+    border:2px solid black;
+
+    padding:18px;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+.correct{
+
+    background:#41b941;
+
+    color:white;
+
+}
+
+.wrong{
+
+    background:#d73b3b;
+
+    color:white;
+
+}
+
+.used{
+
+    pointer-events:none;
+
+}
+
+button{
+
+    font-size:24px;
+
+    padding:12px 30px;
+
+}
+
+#hangman{
+
+margin-top:20px;
+
+margin-bottom:30px;
+
+}
