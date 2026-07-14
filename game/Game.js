@@ -171,7 +171,9 @@ class Game
 
             case "win":
                 return "Prisoner Pardoned";
-
+case "guilty":
+    return "GUILTY";
+           
             case "lose":
                 return "Sentence Carried Out";
         }
