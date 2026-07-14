@@ -60,23 +60,28 @@ app.post("/guess", (req, res) =>
     {
         return res.status(404).json(
         {
-            error: "Game not found"
+            error:"Game not found"
         });
     }
 
-    if(game.status !== "playing")
-    {
-        return res.json(game.state());
-    }
-
-    if(typeof letter !== "string")
+    if(game.status != "playing")
     {
         return res.json(game.state());
     }
 
     game.guess(letter);
 
-    res.json(game.state());
+    const state = game.state();
+
+    if(state.status == "win" || state.status == "lose")
+    {
+        setTimeout(() =>
+        {
+            game.reset();
+        },10000);
+    }
+
+    res.json(state);
 });
 //----------------------------------------
 // State
