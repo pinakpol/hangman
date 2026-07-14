@@ -49,26 +49,35 @@ app.post("/start", (req, res) =>
 // Guess
 //----------------------------------------
 
-app.post("/guess",(req,res)=>{
-
+app.post("/guess", (req, res) =>
+{
     const board = req.body.board;
     const letter = req.body.letter;
 
-    if(!board)
+    const game = games.get(board);
+
+    if(!game)
     {
-        return res.status(400).json({
-            error:"Missing board ID"
+        return res.status(404).json(
+        {
+            error: "Game not found"
         });
     }
 
-    games.guess(board,letter);
+    if(game.status !== "playing")
+    {
+        return res.json(game.state());
+    }
 
-    res.json(
-        games.state(board)
-    );
+    if(typeof letter !== "string")
+    {
+        return res.json(game.state());
+    }
 
+    game.guess(letter);
+
+    res.json(game.state());
 });
-
 //----------------------------------------
 // State
 //----------------------------------------
