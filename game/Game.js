@@ -226,5 +226,5 @@ state()
             this.unusedLetters()
     };
 }
-
+}
 module.exports = Game;
