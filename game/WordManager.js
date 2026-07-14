@@ -1,34 +1,36 @@
 const fs = require("fs");
 const path = require("path");
 
-class WordManager {
-
-    constructor() {
-
+class WordManager
+{
+    constructor()
+    {
         this.categories = {};
 
         this.load();
-
     }
 
-    load() {
+    //------------------------------------------------
 
+    load()
+    {
         const folder = path.join(__dirname, "..", "words");
 
         console.log("Loading words from:", folder);
 
         const files = fs.readdirSync(folder);
 
-        for (const file of files) {
-
-            if (!file.endsWith(".json"))
+        for(const file of files)
+        {
+            if(!file.endsWith(".json"))
                 continue;
 
-            const category = file.replace(".json", "");
+            const category =
+                file.replace(".json","");
 
             const data = JSON.parse(
                 fs.readFileSync(
-                    path.join(folder, file),
+                    path.join(folder,file),
                     "utf8"
                 )
             );
@@ -41,30 +43,47 @@ class WordManager {
                 data.length,
                 "words"
             );
-
         }
-
     }
 
-    getCategories() {
+    //------------------------------------------------
 
+    getCategories()
+    {
         return Object.keys(this.categories);
-
     }
 
-    random(category) {
+    //------------------------------------------------
 
-        const list = this.categories[category];
+    randomCategory()
+    {
+        const list = this.getCategories();
 
-        if (!list)
+        if(list.length == 0)
             return null;
 
         return list[
-            Math.floor(Math.random() * list.length)
+            Math.floor(
+                Math.random() * list.length
+            )
         ];
-
     }
 
+    //------------------------------------------------
+
+    random(category)
+    {
+        const list = this.categories[category];
+
+        if(!list)
+            return null;
+
+        return list[
+            Math.floor(
+                Math.random() * list.length
+            )
+        ];
+    }
 }
 
 module.exports = WordManager;
