@@ -11,6 +11,8 @@ const wrong = document.getElementById("wrong");
 const status = document.getElementById("status");
 const bar = document.getElementById("bar");
 const prisoner = document.getElementById("prisoner");
+
+const announcement = document.getElementById("announcement");
 //====================================================
 // Board ID
 //====================================================
@@ -140,44 +142,97 @@ if(data.canGuess)
 
   prisoner.textContent =
 data.prisoner || "UNKNOWN"; 
+
+
+    const idleMessages =
+[
+"Awaiting the next prisoner.",
+"The gallows stand ready.",
+"The executioner sharpens the axe.",
+"The court awaits its next trial."
+];
+
+const playingMessages =
+[
+"Reveal every letter to earn mercy.",
+"The jury watches every move.",
+"The kingdom awaits the verdict.",
+"The judge allows one final chance."
+];
+
+const winMessages =
+[
+"Against all odds, mercy has prevailed.",
+"The prisoner has earned a royal pardon.",
+"The sentence has been overturned.",
+"Justice has shown compassion today."
+];
+
+const loseMessages =
+[
+"The sentence has been carried out.",
+"The kingdom has witnessed justice.",
+"The gallows claim another soul.",
+"No mercy was granted."
+];
     //------------------------------------------------
 
-    switch(data.status)
-    {
-        case "idle":
+   switch(data.status)
+{
+    case "idle":
 
-            status.textContent =
-            "AWAITING PRISONER";
+        status.textContent =
+        "AWAITING PRISONER";
 
-            break;
+        announcement.textContent =
+        idleMessages[
+            Math.floor(Math.random() * idleMessages.length)
+        ];
 
-        case "playing":
+        break;
 
-            status.textContent =
-            "TRIAL IN PROGRESS";
+    case "playing":
 
-            break;
+        status.textContent =
+        "TRIAL IN PROGRESS";
 
-        case "win":
+        announcement.textContent =
+        playingMessages[
+            Math.floor(Math.random() * playingMessages.length)
+        ];
 
-            status.textContent =
-            "PRISONER PARDONED";
+        break;
 
-            break;
+    case "win":
 
-        case "lose":
+        status.textContent =
+        "PRISONER PARDONED";
 
-            status.textContent =
-            "SENTENCE CARRIED OUT";
+        announcement.textContent =
+        winMessages[
+            Math.floor(Math.random() * winMessages.length)
+        ];
 
-            break;
+        break;
 
-        default:
+    case "lose":
 
-            status.textContent =
-            "";
-    }
+        status.textContent =
+        "SENTENCE CARRIED OUT";
 
+        announcement.textContent =
+        loseMessages[
+            Math.floor(Math.random() * loseMessages.length)
+        ];
+
+        break;
+
+    default:
+
+        status.textContent = "";
+
+        announcement.textContent = "";
+}
     //------------------------------------------------
 
     if(previousStatus != data.status)
