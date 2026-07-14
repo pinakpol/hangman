@@ -241,6 +241,16 @@ function draw(data)
 
             break;
 
+            case "guilty":
+
+    status.textContent =
+        "GUILTY";
+
+    announcement.textContent =
+        "The Judge has spoken.";
+
+    break;
+
         case "lose":
 
             status.textContent =
