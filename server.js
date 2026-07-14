@@ -34,8 +34,7 @@ app.post("/start", (req, res) =>
 
     const prisoner = req.body.prisoner || "Unknown Prisoner";
 
-    games.start(board, category);
-
+   games.start(board, category, prisoner);
     const game = games.get(board);
 
     if(game)
