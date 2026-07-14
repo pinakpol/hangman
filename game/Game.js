@@ -180,23 +180,50 @@ class Game
 
     //------------------------------------------------
 
-  state()
+//------------------------------------------------
+
+state()
 {
     return {
         status: this.status,
-        message: this.message,
-        canGuess: this.status === "playing",
-        prisoner: this.prisoner || "Unknown Prisoner",
-        category: this.category,
-        hint: this.hint,
-        display: this.displayWord(),
-        attempts: this.remainingAttempts,
-        maxAttempts: this.maxAttempts,
-        hangmanStage: this.hangmanStage(),
-        wrong: [...this.wrongLetters],
-        wrongLetters: [...this.wrongLetters],
-        correctLetters: [...this.correctLetters],
-        unusedLetters: this.unusedLetters()
+
+        message: this.message(),
+
+        canGuess:
+            this.status == "playing",
+
+        prisoner:
+            this.prisoner || "Unknown Prisoner",
+
+        category:
+            this.category,
+
+        hint:
+            this.hint,
+
+        display:
+            this.displayWord(),
+
+        attempts:
+            this.remaining,
+
+        maxAttempts:
+            this.maxAttempts,
+
+        hangmanStage:
+            this.maxAttempts - this.remaining,
+
+        wrong:
+            this.wrongLetters(),
+
+        wrongLetters:
+            this.wrongLetters(),
+
+        correctLetters:
+            this.correctLetters(),
+
+        unusedLetters:
+            this.unusedLetters()
     };
 }
 
