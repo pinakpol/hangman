@@ -10,7 +10,7 @@ const attempts = document.getElementById("attempts");
 const wrong = document.getElementById("wrong");
 const status = document.getElementById("status");
 const bar = document.getElementById("bar");
-
+const prisoner = document.getElementById("prisoner");
 //====================================================
 // Board ID
 //====================================================
@@ -138,6 +138,8 @@ if(data.canGuess)
     bar.style.width =
         percent + "%";
 
+  prisoner.textContent =
+data.prisoner || "UNKNOWN"; 
     //------------------------------------------------
 
     switch(data.status)
