@@ -1,0 +1,626 @@
+[
+    {
+        "word": "PIZZA",
+        "hint": "Round Italian dish with cheese and toppings",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PASTA",
+        "hint": "Italian noodles served with sauce",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BURGER",
+        "hint": "Sandwich with a patty between buns",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SUSHI",
+        "hint": "Japanese dish with vinegared rice and raw fish",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "TACO",
+        "hint": "Mexican folded tortilla with filling",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "STEAK",
+        "hint": "Grilled or fried slice of beef",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SALAD",
+        "hint": "Healthy mix of vegetables and dressing",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SOUP",
+        "hint": "Liquid food served hot or cold",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CURRY",
+        "hint": "Spicy Indian dish with gravy",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BREAD",
+        "hint": "Staple baked food made from dough",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SPAGHETTI",
+        "hint": "Long thin pasta noodles",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "LASAGNA",
+        "hint": "Layered Italian pasta dish",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PAELLA",
+        "hint": "Spanish rice dish with seafood",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "DIMSUM",
+        "hint": "Chinese bite-sized dumplings",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "RAMEN",
+        "hint": "Japanese noodle soup in broth",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BURRITO",
+        "hint": "Mexican rolled tortilla with filling",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "QUESADILLA",
+        "hint": "Mexican grilled cheese-filled tortilla",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "CHICKEN",
+        "hint": "Popular white meat poultry",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BACON",
+        "hint": "Cured and smoked pork strips",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SALMON",
+        "hint": "Pink-fleshed oily fish",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "LOBSTER",
+        "hint": "Expensive shellfish with claws",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CRAB",
+        "hint": "Shellfish with ten legs",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SHRIMP",
+        "hint": "Small pink shellfish",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CHEESE",
+        "hint": "Dairy product made from milk",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "EGGS",
+        "hint": "Breakfast food laid by hens",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PANCAKE",
+        "hint": "Flat round breakfast food with syrup",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "WAFFLE",
+        "hint": "Grid-shaped breakfast food",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CEREAL",
+        "hint": "Breakfast food in a bowl with milk",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "OATMEAL",
+        "hint": "Hot breakfast porridge made from oats",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "BAGEL",
+        "hint": "Ring-shaped bread with cream cheese",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "DONUT",
+        "hint": "Sweet fried dough with hole",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CAKE",
+        "hint": "Sweet baked dessert with frosting",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "COOKIE",
+        "hint": "Small sweet baked treat",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BROWNIE",
+        "hint": "Chocolate square dessert",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ICE CREAM",
+        "hint": "Frozen dairy dessert in many flavors",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PUDDING",
+        "hint": "Creamy dessert often with chocolate",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PIE",
+        "hint": "Baked dessert with crust and filling",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "JELLY",
+        "hint": "Fruit spread for toast",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BUTTER",
+        "hint": "Dairy spread for bread",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MILK",
+        "hint": "White beverage from cows",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "COFFEE",
+        "hint": "Popular caffeinated hot beverage",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "TEA",
+        "hint": "Popular hot beverage made from leaves",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "JUICE",
+        "hint": "Liquid extracted from fruits",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SMOOTHIE",
+        "hint": "Thick blended fruit drink",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CHOCOLATE",
+        "hint": "Sweet brown candy from cacao",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CANDY",
+        "hint": "Sugary sweet treat",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "POPCORN",
+        "hint": "Popped corn kernels eaten at movies",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CHIPS",
+        "hint": "Thin fried potato slices",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "NACHOS",
+        "hint": "Tortilla chips with melted cheese",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "HUMMUS",
+        "hint": "Middle Eastern chickpea dip",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "GUACAMOLE",
+        "hint": "Mexican avocado dip",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "PESTO",
+        "hint": "Green Italian sauce made with basil",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MAYONNAISE",
+        "hint": "White creamy sandwich spread",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "MUSTARD",
+        "hint": "Yellow tangy condiment",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "KETCHUP",
+        "hint": "Red tomato-based condiment",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "VINEGAR",
+        "hint": "Sour liquid used in dressings",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SOY SAUCE",
+        "hint": "Salty Asian dipping sauce",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "RICE",
+        "hint": "Staple grain in many cuisines",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BROWNIE",
+        "hint": "Chocolate square dessert",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MOUSSE",
+        "hint": "Light and airy French dessert",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CREPE",
+        "hint": "Thin French pancake",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "STRUDEL",
+        "hint": "Pastry with fruit filling",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "FONDUE",
+        "hint": "Melted cheese or chocolate for dipping",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "TIRAMISU",
+        "hint": "Italian coffee-flavored dessert",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MACARON",
+        "hint": "Colorful French almond cookie",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CROISSANT",
+        "hint": "Flaky French pastry in crescent shape",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "BRIOCHE",
+        "hint": "French sweet bread with butter",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PASTRY",
+        "hint": "Baked dough dessert",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BACLAVA",
+        "hint": "Sweet Middle Eastern pastry with nuts",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "FALAFEL",
+        "hint": "Middle Eastern chickpea fritter",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "KEBAB",
+        "hint": "Grilled meat on a skewer",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BIRYANI",
+        "hint": "Spiced Indian rice dish with meat",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "NAAN",
+        "hint": "Indian flatbread",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SAMOSA",
+        "hint": "Fried triangular savory pastry",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CHUTNEY",
+        "hint": "Spicy Indian condiment",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MANGO",
+        "hint": "Sweet tropical fruit",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BANANA",
+        "hint": "Yellow curved fruit",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "APPLE",
+        "hint": "Round fruit that keeps the doctor away",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ORANGE",
+        "hint": "Citrus fruit with same color name",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "GRAPE",
+        "hint": "Small round fruit in bunches",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "STRAWBERRY",
+        "hint": "Red heart-shaped fruit",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "WATERMELON",
+        "hint": "Large green fruit with red inside",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PINEAPPLE",
+        "hint": "Tropical fruit with spiky crown",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PEACH",
+        "hint": "Fuzzy orange fruit",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PLUM",
+        "hint": "Small purple fruit",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PEAR",
+        "hint": "Bell-shaped fruit",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "AVOCADO",
+        "hint": "Green fruit used in guacamole",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "TOMATO",
+        "hint": "Red fruit often mistaken for vegetable",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "POTATO",
+        "hint": "Brown vegetable used for fries",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CARROT",
+        "hint": "Orange root vegetable",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BROCCOLI",
+        "hint": "Green tree-shaped vegetable",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SPINACH",
+        "hint": "Green leafy vegetable Popeye loves",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "LETTUCE",
+        "hint": "Green leafy salad base",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CUCUMBER",
+        "hint": "Long green vegetable with water",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PEPPER",
+        "hint": "Vegetable that can be sweet or spicy",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MUSHROOM",
+        "hint": "Fungus used in cooking",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PICKLE",
+        "hint": "Cucumber preserved in brine",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "OLIVE",
+        "hint": "Small green or black fruit",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "RADISH",
+        "hint": "Small red vegetable with bite",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CELERY",
+        "hint": "Green crunchy vegetable",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CABBAGE",
+        "hint": "Round green leafy vegetable",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CAULIFLOWER",
+        "hint": "White vegetable with florets",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "ASPARAGUS",
+        "hint": "Green spear-shaped vegetable",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "CORN",
+        "hint": "Yellow kernels on a cob",
+        "difficulty": "easy",
+        "points": 5
+    }
+]

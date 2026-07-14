@@ -1,0 +1,698 @@
+[
+    {
+        "word": "PYRAMID",
+        "hint": "Ancient Egyptian burial monument",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PHARAOH",
+        "hint": "Ancient Egyptian ruler",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "EMPIRE",
+        "hint": "Large group of states under one ruler",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "REVOLUTION",
+        "hint": "Forced change of government",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "MONARCHY",
+        "hint": "Government with a king or queen",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "DEMOCRACY",
+        "hint": "Government by the people",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "GLADIATOR",
+        "hint": "Ancient Roman fighter",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "KING",
+        "hint": "Male ruler of a kingdom",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "QUEEN",
+        "hint": "Female ruler of a kingdom",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "COLONY",
+        "hint": "Settlement controlled by a distant country",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "TREATY",
+        "hint": "Formal agreement between countries",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "WAR",
+        "hint": "Armed conflict between groups",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PEACE",
+        "hint": "State of no war or conflict",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CASTLE",
+        "hint": "Fortified building from medieval times",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "KNIGHT",
+        "hint": "Medieval armored warrior",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "VIKING",
+        "hint": "Norse seafaring warriors",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SAMURAI",
+        "hint": "Japanese warrior class",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "NINJA",
+        "hint": "Japanese covert agent",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "RENAISSANCE",
+        "hint": "European cultural rebirth period",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "INDUSTRY",
+        "hint": "Large-scale manufacturing",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "REVOLUTIONARY",
+        "hint": "Person who leads a revolution",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "NATION",
+        "hint": "Large group of people with common culture",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "STATE",
+        "hint": "Political unit with a government",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CIVILIZATION",
+        "hint": "Advanced human society",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "ANCIENT",
+        "hint": "Very old or from long ago",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MEDIEVAL",
+        "hint": "Period between ancient and modern",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MODERN",
+        "hint": "Relating to present times",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ARCHAEOLOGY",
+        "hint": "Study of past human cultures",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "ARTIFACT",
+        "hint": "Object made by humans in the past",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "HIEROGLYPHICS",
+        "hint": "Ancient Egyptian writing system",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "COLOSSEUM",
+        "hint": "Ancient Roman amphitheater",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "PARTHEON",
+        "hint": "Ancient Roman temple",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ACROPOLIS",
+        "hint": "Ancient Greek citadel in Athens",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "ODYSSEY",
+        "hint": "Greek epic poem by Homer",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MYTHOLOGY",
+        "hint": "Collection of ancient stories",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "PAGAN",
+        "hint": "Ancient polytheistic religion",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CRUSADE",
+        "hint": "Medieval religious military expedition",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PILGRIM",
+        "hint": "Religious traveler",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "REFORMATION",
+        "hint": "Religious movement in Europe",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "ENLIGHTENMENT",
+        "hint": "Philosophical movement in 18th century",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "MANIFEST DESTINY",
+        "hint": "19th century US expansion belief",
+        "difficulty": "hard",
+        "points": 25
+    },
+    {
+        "word": "COLONIZATION",
+        "hint": "Settling of new lands",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "IMPERIALISM",
+        "hint": "Extending power through colonization",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "NATIONALISM",
+        "hint": "Strong loyalty to one's country",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "FASCISM",
+        "hint": "Authoritarian political movement",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "COMMUNISM",
+        "hint": "Political theory of common ownership",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "SOCIALISM",
+        "hint": "Social and economic equality system",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "CAPITALISM",
+        "hint": "Private ownership of businesses",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "CONSTITUTION",
+        "hint": "Supreme law of a country",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "DECLARATION",
+        "hint": "Official announcement",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "FOUNDING FATHERS",
+        "hint": "US independence signers",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "GEORGE WASHINGTON",
+        "hint": "First US president",
+        "difficulty": "hard",
+        "points": 25
+    },
+    {
+        "word": "ABRAHAM LINCOLN",
+        "hint": "US president during Civil War",
+        "difficulty": "hard",
+        "points": 25
+    },
+    {
+        "word": "WINSTON CHURCHILL",
+        "hint": "British leader during WW2",
+        "difficulty": "hard",
+        "points": 25
+    },
+    {
+        "word": "NAPOLEON",
+        "hint": "French military leader and emperor",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "CAESAR",
+        "hint": "Roman ruler and general",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ALEXANDER THE GREAT",
+        "hint": "Macedonian king and conqueror",
+        "difficulty": "hard",
+        "points": 25
+    },
+    {
+        "word": "GENGHIS KHAN",
+        "hint": "Founder of Mongol Empire",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "CLEOPATRA",
+        "hint": "Famous Egyptian queen",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "JOAN OF ARC",
+        "hint": "French military hero and saint",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "MARTIN LUTHER KING",
+        "hint": "Civil rights leader",
+        "difficulty": "hard",
+        "points": 25
+    },
+    {
+        "word": "MAHATMA GANDHI",
+        "hint": "Indian independence leader",
+        "difficulty": "hard",
+        "points": 25
+    },
+    {
+        "word": "KARL MARX",
+        "hint": "Father of communism",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "MARCO POLO",
+        "hint": "Italian explorer who traveled to China",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "COLUMBUS",
+        "hint": "Explorer who reached America in 1492",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MAGELLAN",
+        "hint": "First to circumnavigate the globe",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "COOK",
+        "hint": "British explorer who mapped Pacific",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "AMUNDSEN",
+        "hint": "First to reach the South Pole",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "SCOTT",
+        "hint": "British explorer in Antarctica",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ARMSTRONG",
+        "hint": "First person on the moon",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BUDDHA",
+        "hint": "Founder of Buddhism",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "JESUS",
+        "hint": "Central figure of Christianity",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MUHAMMAD",
+        "hint": "Founder of Islam",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "RENAISSANCE MAN",
+        "hint": "Person with many talents",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "GUTENBERG",
+        "hint": "Inventor of printing press",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "GALILEO",
+        "hint": "Astronomer who improved the telescope",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "COPERNICUS",
+        "hint": "Proposed the sun-centered universe",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "DARWIN",
+        "hint": "Developed evolution theory",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "NEWTON",
+        "hint": "Discovered gravity",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "EINSTEIN",
+        "hint": "Developed theory of relativity",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "BELL",
+        "hint": "Invented the telephone",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "EDISON",
+        "hint": "Invented the light bulb",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MARTIN LUTHER",
+        "hint": "Started the Protestant Reformation",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "SOCRATES",
+        "hint": "Ancient Greek philosopher",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PLATO",
+        "hint": "Student of Socrates, Greek philosopher",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ARISTOTLE",
+        "hint": "Student of Plato, Greek philosopher",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "OLYMPICS",
+        "hint": "International athletic competition",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "THEATRE",
+        "hint": "Place for performances in ancient Greece",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MYTH",
+        "hint": "Traditional ancient story",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "LEGEND",
+        "hint": "Traditional historical story",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "GOLDEN AGE",
+        "hint": "Period of great prosperity and peace",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "DARK AGES",
+        "hint": "Period of decline after Roman Empire",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "INDUSTRIAL REVOLUTION",
+        "hint": "Period of industrialization",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "INDUSTRIALIZATION",
+        "hint": "Development of factories",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "SILK ROAD",
+        "hint": "Ancient trade route between Asia and Europe",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "MARCH ON WASHINGTON",
+        "hint": "1963 civil rights demonstration",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "BERLIN WALL",
+        "hint": "Divided East and West Berlin",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "COLD WAR",
+        "hint": "Post-WW2 tension between US and USSR",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "VIETNAM WAR",
+        "hint": "Conflict in Southeast Asia",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "WORLD WAR I",
+        "hint": "Global war from 1914-1918",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "WORLD WAR II",
+        "hint": "Global war from 1939-1945",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "GRAND STRATEGY",
+        "hint": "Long-term military and political strategy",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "ALLIANCE",
+        "hint": "Agreement between nations",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "DIPLOMACY",
+        "hint": "Managing relations between countries",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "EMANCIPATION",
+        "hint": "Freeing of enslaved people",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "SUFFRAGE",
+        "hint": "Right to vote",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "WOMEN'S RIGHTS",
+        "hint": "Movement for women's equality",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "CIVIL RIGHTS",
+        "hint": "Movement for equality in 1960s",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "SEGREGATION",
+        "hint": "Forced separation of races",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "APARTHEID",
+        "hint": "South African segregation system",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "COMMONWEALTH",
+        "hint": "Association of nations under British crown",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "UNITED NATIONS",
+        "hint": "International peace organization",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "LEAGUE OF NATIONS",
+        "hint": "Predecessor to the UN",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "RENAISSANCE",
+        "hint": "Rebirth of art and learning in Europe",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "APOLLO",
+        "hint": "NASA's moon landing program",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SPACE RACE",
+        "hint": "US vs USSR competition for space",
+        "difficulty": "hard",
+        "points": 15
+    }
+]

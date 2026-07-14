@@ -1,0 +1,704 @@
+[
+    {
+        "word": "ATOM",
+        "hint": "Basic unit of matter",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CELL",
+        "hint": "Basic unit of life",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "DNA",
+        "hint": "Molecule that carries genetic information",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ENERGY",
+        "hint": "Capacity to do work",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "FORCE",
+        "hint": "Push or pull on an object",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "GRAVITY",
+        "hint": "Force that pulls objects toward Earth",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MAGNET",
+        "hint": "Object that attracts iron",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PLANET",
+        "hint": "Large celestial body orbiting a star",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "STAR",
+        "hint": "Massive luminous celestial body",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "WATER",
+        "hint": "Chemical compound H2O",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "OXYGEN",
+        "hint": "Gas essential for human life",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CARBON",
+        "hint": "Element found in all living things",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "HYDROGEN",
+        "hint": "Lightest and most abundant element",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "NITROGEN",
+        "hint": "Most abundant gas in Earth's atmosphere",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PHOTOSYNTHESIS",
+        "hint": "Plants convert sunlight to energy",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "EVOLUTION",
+        "hint": "Species change over time",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MOLECULE",
+        "hint": "Group of atoms bonded together",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "NEURON",
+        "hint": "Nerve cell that transmits signals",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ECOSYSTEM",
+        "hint": "Community of living organisms and environment",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "CHLOROPHYLL",
+        "hint": "Green pigment in plants",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "GALAXY",
+        "hint": "System of millions of stars",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "NEBULA",
+        "hint": "Cloud of gas and dust in space",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "QUANTUM",
+        "hint": "Minimum unit of any physical entity",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "ELECTRON",
+        "hint": "Negatively charged subatomic particle",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PROTON",
+        "hint": "Positively charged subatomic particle",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "NEUTRON",
+        "hint": "Neutral subatomic particle",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "VACCINE",
+        "hint": "Substance that stimulates immunity",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ANTIBODY",
+        "hint": "Protein that fights infections",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "VIRUS",
+        "hint": "Infectious agent that replicates inside cells",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BACTERIA",
+        "hint": "Single-celled microorganisms",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "FOSSIL",
+        "hint": "Preserved remains of ancient life",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "DINOSAUR",
+        "hint": "Extinct reptile from prehistoric times",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MAMMAL",
+        "hint": "Animal that produces milk for young",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "AMPHIBIAN",
+        "hint": "Animal that lives on land and water",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "REPTILE",
+        "hint": "Cold-blooded scaly animal",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "INSECT",
+        "hint": "Animal with six legs and exoskeleton",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "FUNGUS",
+        "hint": "Organism like mushrooms and mold",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "GENETICS",
+        "hint": "Study of heredity and genes",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CHROMOSOME",
+        "hint": "Structure containing DNA in cells",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "PROTEIN",
+        "hint": "Essential nutrient for body growth",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ENZYME",
+        "hint": "Protein that speeds up chemical reactions",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "HORMONE",
+        "hint": "Chemical messenger in the body",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "NUCLEUS",
+        "hint": "Control center of a cell",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MITOCHONDRIA",
+        "hint": "Powerhouse of the cell",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "RIBOSOME",
+        "hint": "Cell structure that makes proteins",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "METEOR",
+        "hint": "Space rock that burns in atmosphere",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ASTEROID",
+        "hint": "Large rocky body in space",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "COMET",
+        "hint": "Icy body with a glowing tail in space",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ORBIT",
+        "hint": "Path of an object around another",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SATELLITE",
+        "hint": "Object that orbits a planet",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "TELESCOPE",
+        "hint": "Instrument for viewing distant objects",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MICROSCOPE",
+        "hint": "Instrument for viewing tiny objects",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "CHEMISTRY",
+        "hint": "Study of matter and its properties",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "BIOLOGY",
+        "hint": "Study of living organisms",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PHYSICS",
+        "hint": "Study of matter, energy and motion",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ASTRONOMY",
+        "hint": "Study of celestial bodies",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "GEOLOGY",
+        "hint": "Study of Earth and its rocks",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "METEOROLOGY",
+        "hint": "Study of weather",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "ZOOLOGY",
+        "hint": "Study of animals",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "BOTANY",
+        "hint": "Study of plants",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ECOLOGY",
+        "hint": "Study of organisms and their environment",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ANATOMY",
+        "hint": "Study of body structure",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "EVOLUTION",
+        "hint": "Process of species change over time",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "RADIATION",
+        "hint": "Energy emitted as waves or particles",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "MAGNETISM",
+        "hint": "Force from magnetic fields",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ELECTRICITY",
+        "hint": "Flow of electric charge",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "FRICTION",
+        "hint": "Force that opposes motion",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "INERTIA",
+        "hint": "Object's resistance to change in motion",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "VELOCITY",
+        "hint": "Speed with a direction",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "ACCELERATION",
+        "hint": "Rate of change of velocity",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "TEMPERATURE",
+        "hint": "Measure of heat energy",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "PRESSURE",
+        "hint": "Force divided by area",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "DENSITY",
+        "hint": "Mass per unit volume",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "VOLUME",
+        "hint": "Amount of space occupied by matter",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MASS",
+        "hint": "Amount of matter in an object",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "WEIGHT",
+        "hint": "Force of gravity on an object",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SOLAR SYSTEM",
+        "hint": "Sun and celestial bodies orbiting it",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SUPERNOVA",
+        "hint": "Explosion of a dying star",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "BLACK HOLE",
+        "hint": "Region with gravity so strong light can't escape",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "LASER",
+        "hint": "Device that amplifies light",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ULTRASOUND",
+        "hint": "Sound waves above human hearing",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "X RAY",
+        "hint": "Radiation used for medical imaging",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ATMOSPHERE",
+        "hint": "Layer of gases around a planet",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "HYDROSPHERE",
+        "hint": "All water on Earth",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "LITHOSPHERE",
+        "hint": "Earth's solid outer layer",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "BIOSPHERE",
+        "hint": "Zone where life exists on Earth",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "GEOTHERMAL",
+        "hint": "Heat energy from inside Earth",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "PHOTON",
+        "hint": "Particle of light",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MUTATION",
+        "hint": "Change in genetic material",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SPECIES",
+        "hint": "Group of similar organisms",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "HABITAT",
+        "hint": "Natural home of an organism",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PREDATOR",
+        "hint": "Animal that hunts others",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PREY",
+        "hint": "Animal that is hunted",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SYMBIOSIS",
+        "hint": "Close relationship between species",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "PHOTOSYNTHESIS",
+        "hint": "Plants convert light to food",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "RESPIRATION",
+        "hint": "Process of breathing in organisms",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "DIGESTION",
+        "hint": "Breaking down food in the body",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "CIRCULATION",
+        "hint": "Movement of blood in the body",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "NERVOUS SYSTEM",
+        "hint": "Body system that transmits signals",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "MOLTEN",
+        "hint": "Liquid state due to extreme heat",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "MAGMA",
+        "hint": "Molten rock beneath Earth's surface",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "LAVA",
+        "hint": "Molten rock on Earth's surface",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MINERAL",
+        "hint": "Naturally occurring solid substance",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CRYSTAL",
+        "hint": "Solid with regular atomic structure",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ACID",
+        "hint": "Substance with pH less than 7",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BASE",
+        "hint": "Substance with pH greater than 7",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "NEUTRAL",
+        "hint": "Substance with pH of 7",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "OXIDATION",
+        "hint": "Process of rusting or burning",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "REDUCTION",
+        "hint": "Gaining electrons in a reaction",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "SOLVENT",
+        "hint": "Liquid that dissolves substances",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SOLUTE",
+        "hint": "Substance dissolved in a solution",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SOLUTION",
+        "hint": "Mixture of solute and solvent",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MIXTURE",
+        "hint": "Combination of substances not chemically bonded",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "COMPOUND",
+        "hint": "Substance with chemically bonded atoms",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ELEMENT",
+        "hint": "Pure substance with one type of atom",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PERIODIC TABLE",
+        "hint": "Chart organizing chemical elements",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "REACTION",
+        "hint": "Process where substances change",
+        "difficulty": "easy",
+        "points": 5
+    }
+]

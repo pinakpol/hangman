@@ -1,0 +1,590 @@
+[
+    {
+        "word": "SHAWSHANK REDEMPTION",
+        "hint": "A banker finds hope and friendship in prison",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "THE GODFATHER",
+        "hint": "A mafia family patriarch transfers his empire to his son",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "THE DARK KNIGHT",
+        "hint": "Batman faces the chaos of the Joker in Gotham",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "THE GODFATHER PART II",
+        "hint": "The early life of Vito Corleone and his son Michael's rise",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "TWELVE ANGRY MEN",
+        "hint": "A jury holds out, forcing a re-examination of evidence",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SCHINDLER'S LIST",
+        "hint": "A German industrialist saves his Jewish workers in WWII",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "THE LORD OF THE RINGS RETURN",
+        "hint": "The final battle for Middle-earth",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "PULP FICTION",
+        "hint": "Intertwining tales of mobsters and redemption",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "THE LORD OF THE RINGS FELLOWSHIP",
+        "hint": "A hobbit embarks on a journey to destroy a powerful ring",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "THE GOOD THE BAD AND THE UGLY",
+        "hint": "Three gunslingers search for buried gold",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "FORREST GUMP",
+        "hint": "A man with a low IQ witnesses and influences history",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "THE LORD OF THE RINGS TWO TOWERS",
+        "hint": "The fellowship splits as the war of the ring continues",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "FIGHT CLUB",
+        "hint": "An insomniac office worker forms an underground fight club",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "INCEPTION",
+        "hint": "A thief enters dreams to plant an idea",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "STAR WARS EMPIRE STRIKES BACK",
+        "hint": "Luke Skywalker trains as a Jedi while his friends are pursued",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "THE MATRIX",
+        "hint": "A hacker discovers his world is a simulated reality",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "GOODFELLAS",
+        "hint": "The story of Henry Hill and his life in the mob",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "ONE FLEW OVER THE CUCKOOS NEST",
+        "hint": "A rebellious convict inspires docile inmates",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "INTERSTELLAR",
+        "hint": "Explorers travel through a wormhole to save humanity",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "SEVEN",
+        "hint": "Two detectives hunt a serial killer using the seven deadly sins",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "THE SILENCE OF THE LAMBS",
+        "hint": "An FBI cadet seeks help from a cannibalistic killer",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SAVING PRIVATE RYAN",
+        "hint": "A WWII squad is sent to bring a paratrooper home",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CITY OF GOD",
+        "hint": "Two kids in Rio de Janeiro take different paths in life",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "THE GREEN MILE",
+        "hint": "A death row guard learns a gentle giant has a miraculous gift",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "LIFE IS BEAUTIFUL",
+        "hint": "A Jewish waiter uses humor to protect his son in a Nazi camp",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "STAR WARS A NEW HOPE",
+        "hint": "A farmboy joins forces to save the galaxy from the Empire",
+        "difficulty": "hard",
+        "points": 10
+    },
+    {
+        "word": "SEVEN SAMURAI",
+        "hint": "Villagers hire samurai to protect them from bandits",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "IT'S A WONDERFUL LIFE",
+        "hint": "An angel shows a man the value of his own life",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "TERMINATOR 2 JUDGMENT DAY",
+        "hint": "A cyborg protects the future savior from a more advanced model",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "SPIRITED AWAY",
+        "hint": "A girl enters a world of gods and spirits",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "BACK TO THE FUTURE",
+        "hint": "A teen is accidentally sent 30 years into the past",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "THE PIANIST",
+        "hint": "A Polish musician struggles to survive in WWII Warsaw",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "GLADIATOR",
+        "hint": "A former Roman general seeks vengeance against an emperor",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "THE PRESTIGE",
+        "hint": "Two magicians in Victorian London try to outdo each other",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "ALIEN",
+        "hint": "A spaceship crew encounters a terrifying life form",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "AMERICAN HISTORY X",
+        "hint": "A neo-Nazi changes his ways after prison",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "GRAVE OF THE FIREFLIES",
+        "hint": "A boy and his sister struggle to survive in WWII Japan",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "CASABLANCA",
+        "hint": "A cynical American cafe owner helps his former lover escape the Nazis",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MODERN TIMES",
+        "hint": "Charlie Chaplin struggles with life in the industrial age",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CITY LIGHTS",
+        "hint": "A tramp falls in love with a blind flower girl",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "THE INCREDIBLES",
+        "hint": "A family of superheroes tries to save the world",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "THE INTOUCHABLES",
+        "hint": "A quadriplegic aristocrat hires a young man from the projects as his caregiver",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PARASITE",
+        "hint": "A poor family schemes to work for a wealthy family with dark consequences",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "PSYCHO",
+        "hint": "A woman's disappearance at a motel leads to a killer",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "THE LION KING",
+        "hint": "A lion cub must reclaim his pride from his evil uncle",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "DJANGO UNCHAINED",
+        "hint": "A freed slave teams up with a bounty hunter to rescue his wife",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "THE USUAL SUSPECTS",
+        "hint": "The sole survivor of a shootout tells the story of a notorious criminal",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "WHIPLASH",
+        "hint": "A young drummer pushes himself under a demanding teacher",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "LEON THE PROFESSIONAL",
+        "hint": "A hitman takes in a young girl and teaches her his skills",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CINEMA PARADISO",
+        "hint": "A filmmaker recalls his childhood in a small Italian town",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SUNSET BOULEVARD",
+        "hint": "A screenwriter becomes entangled with a faded silent film star",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "ONCE UPON A TIME IN THE WEST",
+        "hint": "A mysterious gunslinger protects a widow from a ruthless assassin",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "REAR WINDOW",
+        "hint": "A photographer suspects a neighbor of murder",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "INGLOURIOUS BASTERDS",
+        "hint": "A group of Jewish-American soldiers plot to kill Hitler",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "THE APARTMENT",
+        "hint": "An office worker lends his apartment to executives for their affairs",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SINGIN IN THE RAIN",
+        "hint": "A silent film star has to adapt to the talkies",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "AVENGERS ENDGAME",
+        "hint": "The Avengers assemble to reverse Thanos's actions",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "AVENGERS INFINITY WAR",
+        "hint": "The Avengers must stop Thanos from collecting the Infinity Stones",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "SPIDER-MAN ACROSS THE SPIDER-VERSE",
+        "hint": "Miles Morales meets a new team of Spider-People from different dimensions",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "SPIDER-MAN INTO THE SPIDER-VERSE",
+        "hint": "Teenager Miles Morales becomes the Spider-Man of his reality",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "DUNE PART TWO",
+        "hint": "Paul Atreides unites with the Fremen on a warpath of revenge",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "APOCALYPSE NOW",
+        "hint": "A US Army officer in Vietnam is tasked with assassinating a renegade colonel",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "THE SHINING",
+        "hint": "A family stays at an isolated hotel for the winter with horrific results",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ALIENS",
+        "hint": "Ellen Ripley returns to a colony on the same planet as the Nostromo",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MEMENTO",
+        "hint": "A man with amnesia uses tattoos to hunt his wife's murderer",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "RAIDERS OF THE LOST ARK",
+        "hint": "An archaeologist races against the Nazis to find the Ark of the Covenant",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "THE DARK KNIGHT RISES",
+        "hint": "Batman returns to face the terrorist Bane and save Gotham",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "AMADEUS",
+        "hint": "A court composer conspires against the prodigy Wolfgang Amadeus Mozart",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "YOUR NAME",
+        "hint": "Two strangers find themselves linked in a strange way",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "THE LIVES OF OTHERS",
+        "hint": "A Stasi agent spies on a playwright in East Germany",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "3 IDIOTS",
+        "hint": "Two friends search for their missing college buddy",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "COCO",
+        "hint": "A boy enters the Land of the Dead to find his great-great-grandfather",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "WALL-E",
+        "hint": "A robot left to clean up Earth discovers a plant",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "DAS BOOT",
+        "hint": "The crew of a German U-boat face the horrors of war at sea",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "WITNESS FOR THE PROSECUTION",
+        "hint": "A veteran barrister defends a client in a murder trial with surprise after surprise",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PATHS OF GLORY",
+        "hint": "A colonel defends his soldiers after a court-martial for a suicidal attack",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "THE GREAT DICTATOR",
+        "hint": "A Jewish barber tries to avoid persecution by a dictator",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "GOOD WILL HUNTING",
+        "hint": "A therapist helps a young genius discover his identity",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "OLDBOY",
+        "hint": "A man is imprisoned for 15 years and released to find his captor",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "REQUIEM FOR A DREAM",
+        "hint": "Four people's lives are destroyed by their addictions",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "INCENDIES",
+        "hint": "Twins discover the truth about their mother's past",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "AMERICAN BEAUTY",
+        "hint": "A middle-aged man becomes infatuated with his daughter's friend",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ETERNAL SUNSHINE",
+        "hint": "A couple erases each other from their memories",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "THE HUNT",
+        "hint": "A small-town teacher is falsely accused of a crime",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "BRAVEHEART",
+        "hint": "A Scottish warrior leads a rebellion against the English",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "JOKER",
+        "hint": "A failed comedian turns to a life of crime in Gotham City",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "2001 A SPACE ODYSSEY",
+        "hint": "A voyage to Jupiter with a sentient computer named HAL",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "COME AND SEE",
+        "hint": "A young boy in Belarus witnesses the horrors of the Nazi occupation",
+        "difficulty": "hard",
+        "points": 25
+    },
+    {
+        "word": "PRINCESS MONONOKE",
+        "hint": "A young prince finds himself in a war between the forest gods and a mining colony",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "TOY STORY",
+        "hint": "Toys come to life when their owner isn't around",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ONCE UPON A TIME IN AMERICA",
+        "hint": "A former gangster returns to New York for a friend's funeral",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "DR STRANGELOVE",
+        "hint": "A general orders an attack on Russia, leading to a nuclear crisis",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "LAWRENCE OF ARABIA",
+        "hint": "An English officer unites Arab tribes during World War I",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "STAR WARS RETURN OF THE JEDI",
+        "hint": "The rebel alliance mounts a final assault on the Empire",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "TOY STORY 3",
+        "hint": "Andy's toys find a new home with a little girl",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "HIGH AND LOW",
+        "hint": "A wealthy executive is extorted by a kidnapper",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "HARAKIRI",
+        "hint": "A ronin requesting seppuku reveals a brutal story",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "THE DEPARTED",
+        "hint": "An undercover cop and a mole in the police force try to identify each other",
+        "difficulty": "medium",
+        "points": 10
+    }
+]

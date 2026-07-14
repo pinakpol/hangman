@@ -1,0 +1,308 @@
+[
+    {
+        "word": "ELEPHANT",
+        "hint": "Largest land mammal",
+        "difficulty": "easy",
+        "points": 10
+    },
+    {
+        "word": "GIRAFFE",
+        "hint": "Tallest animal",
+        "difficulty": "easy",
+        "points": 10
+    },
+    {
+        "word": "DOG",
+        "hint": "Man's best friend",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CAT",
+        "hint": "Likes catching mice",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "KANGAROO",
+        "hint": "Australian jumper",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "LION",
+        "hint": "King of the jungle",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "TIGER",
+        "hint": "Striped big cat",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BEAR",
+        "hint": "Hibernates in winter",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MONKEY",
+        "hint": "Loves bananas",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ZEBRA",
+        "hint": "Black and white striped horse",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PENGUIN",
+        "hint": "Flightless bird that swims",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "DOLPHIN",
+        "hint": "Intelligent sea mammal",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "EAGLE",
+        "hint": "Bird of prey with sharp eyes",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SHARK",
+        "hint": "Apex predator of the ocean",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "BUTTERFLY",
+        "hint": "Colorful insect with wings",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CROCODILE",
+        "hint": "Reptile with powerful jaws",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "CHEETAH",
+        "hint": "Fastest land animal",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "PANDA",
+        "hint": "Black and white bear from China",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "KOMODODRAGON",
+        "hint": "Largest living lizard",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "CHAMELEON",
+        "hint": "Can change its color",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "HEDGEHOG",
+        "hint": "Small spiky mammal",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "FLAMINGO",
+        "hint": "Pink wading bird",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "KILLERWHALE",
+        "hint": "Black and white ocean predator",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "GORILLA",
+        "hint": "Largest primate",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "PEACOCK",
+        "hint": "Bird with spectacular tail feathers",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SCORPION",
+        "hint": "Arachnid with a stinging tail",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "JELLYFISH",
+        "hint": "Translucent sea creature",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "PARROT",
+        "hint": "Colorful bird that can talk",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "RACCOON",
+        "hint": "Masked nocturnal animal",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SEAHORSE",
+        "hint": "Small horse-shaped fish",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SLOTH",
+        "hint": "Very slow-moving mammal",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "WALRUS",
+        "hint": "Large marine mammal with tusks",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ARMADILLO",
+        "hint": "Mammal with armored shell",
+        "difficulty": "hard",
+        "points": 15
+    },
+    {
+        "word": "BAT",
+        "hint": "Only flying mammal",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CAMEL",
+        "hint": "Desert animal with humps",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "DEER",
+        "hint": "Male has antlers",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "FALCON",
+        "hint": "Fastest bird of prey",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "GECKO",
+        "hint": "Small lizard with sticky toes",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "HIPPOPOTAMUS",
+        "hint": "Large river mammal with big mouth",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "IGUANA",
+        "hint": "Large lizard with spines",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "JAGUAR",
+        "hint": "Spotted big cat from Americas",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "LEOPARD",
+        "hint": "Spotted big cat climber",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "MOOSE",
+        "hint": "Large deer with palmate antlers",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "NARWHAL",
+        "hint": "Arctic whale with long tusk",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "OCTOPUS",
+        "hint": "Sea creature with eight arms",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "PANTHER",
+        "hint": "Black big cat",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "RABBIT",
+        "hint": "Long-eared burrowing animal",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SNAKE",
+        "hint": "Legless reptile",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "TURTLE",
+        "hint": "Reptile with a shell",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "WOLF",
+        "hint": "Wild pack hunter",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "YAK",
+        "hint": "Long-haired mountain ox",
+        "difficulty": "easy",
+        "points": 5
+    }
+]

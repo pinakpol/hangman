@@ -1,0 +1,542 @@
+[
+    {
+        "word": "CANADA",
+        "hint": "Home of maple syrup and hockey",
+        "difficulty": "easy",
+        "points": 10
+    },
+    {
+        "word": "BRAZIL",
+        "hint": "Largest country in South America",
+        "difficulty": "easy",
+        "points": 10
+    },
+    {
+        "word": "CHINA",
+        "hint": "Most populous country",
+        "difficulty": "easy",
+        "points": 10
+    },
+    {
+        "word": "INDIA",
+        "hint": "Home of the Taj Mahal",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "AUSTRALIA",
+        "hint": "Land down under",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "EGYPT",
+        "hint": "Land of the pyramids",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "FRANCE",
+        "hint": "Home of the Eiffel Tower",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "GERMANY",
+        "hint": "Country of the Autobahn",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ITALY",
+        "hint": "Boot-shaped country",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "JAPAN",
+        "hint": "Land of the Rising Sun",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MEXICO",
+        "hint": "Home of tacos and sombreros",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "RUSSIA",
+        "hint": "Largest country by area",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SPAIN",
+        "hint": "Home of flamenco and bullfighting",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "UNITEDKINGDOM",
+        "hint": "Country with the Queen/King",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "UNITEDSTATES",
+        "hint": "Country of the Star-Spangled Banner",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "ARGENTINA",
+        "hint": "Home of tango and steak",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "BELGIUM",
+        "hint": "Home of waffles and chocolate",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "COLOMBIA",
+        "hint": "Country famous for coffee",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "DENMARK",
+        "hint": "Home of the Lego brick",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "FINLAND",
+        "hint": "Country of a thousand lakes",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "GREECE",
+        "hint": "Birthplace of the Olympics",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ICELAND",
+        "hint": "Land of fire and ice",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "INDONESIA",
+        "hint": "Largest archipelagic country",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "IRELAND",
+        "hint": "Emerald Isle",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "ISRAEL",
+        "hint": "Land of milk and honey",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "KENYA",
+        "hint": "Famous for its safari",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MALAYSIA",
+        "hint": "Known for the Petronas Towers",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "NETHERLANDS",
+        "hint": "Land of windmills and tulips",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "NEWZEALAND",
+        "hint": "Home of the Maori people",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "NORWAY",
+        "hint": "Land of the midnight sun",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PAKISTAN",
+        "hint": "Home of the Khyber Pass",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "PERU",
+        "hint": "Land of the Incas",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PHILIPPINES",
+        "hint": "Country of over 7000 islands",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "POLAND",
+        "hint": "Land of pierogi and castles",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PORTUGAL",
+        "hint": "Country famous for port wine",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ROMANIA",
+        "hint": "Land of Dracula",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SAUDIARABIA",
+        "hint": "Land of sand and oil",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "SINGAPORE",
+        "hint": "Garden city with a Merlion",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SOUTHAFRICA",
+        "hint": "Rainbow nation",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "SOUTHKOREA",
+        "hint": "Home of K-pop and kimchi",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "SWEDEN",
+        "hint": "Known for IKEA and ABBA",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SWITZERLAND",
+        "hint": "Country of chocolate and watches",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "TAIWAN",
+        "hint": "Known for its high tech industry",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "THAILAND",
+        "hint": "Land of Smiles",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "TURKEY",
+        "hint": "Bridge between Europe and Asia",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "UKRAINE",
+        "hint": "Largest country in Europe",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "VIETNAM",
+        "hint": "Famous for pho and Ha Long Bay",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "VENEZUELA",
+        "hint": "Home of Angel Falls",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "ZIMBABWE",
+        "hint": "Home of Victoria Falls",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "AFGHANISTAN",
+        "hint": "Known for the Hindu Kush mountains",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "ALGERIA",
+        "hint": "Largest country in Africa",
+        "difficulty": "medium",
+        "points": 15
+    },
+    {
+        "word": "BOLIVIA",
+        "hint": "Land of the Salar de Uyuni",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CAMBODIA",
+        "hint": "Home of Angkor Wat",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CHILE",
+        "hint": "Long and narrow South American country",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "COSTARICA",
+        "hint": "Known for its biodiversity",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "CROATIA",
+        "hint": "Known for its Adriatic coast",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "CUBA",
+        "hint": "Caribbean island known for cigars",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "DOMINICANREPUBLIC",
+        "hint": "Known for its beaches and resorts",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "ECUADOR",
+        "hint": "Crossed by the equator",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "ETHIOPIA",
+        "hint": "Known as the cradle of humanity",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "HUNGARY",
+        "hint": "Known for the Danube River",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "IRAN",
+        "hint": "Ancient Persia",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "IRAQ",
+        "hint": "Ancient Mesopotamia",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "JAMAICA",
+        "hint": "Known for reggae and Blue Mountains",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "JORDAN",
+        "hint": "Home of Petra",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "KAZAKHSTAN",
+        "hint": "Largest landlocked country",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "LEBANON",
+        "hint": "Known for its cedar trees",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "LIBYA",
+        "hint": "Known for its Sahara desert",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MOROCCO",
+        "hint": "Known for its medinas and Atlas Mountains",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "MYANMAR",
+        "hint": "Land of golden pagodas",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "NEPAL",
+        "hint": "Home of Mount Everest",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "NIGERIA",
+        "hint": "Most populous country in Africa",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "OMAN",
+        "hint": "Known for its frankincense",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PANAMA",
+        "hint": "Known for its famous canal",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "PAPUANEWGUINEA",
+        "hint": "Diverse island country near Australia",
+        "difficulty": "hard",
+        "points": 25
+    },
+    {
+        "word": "QATAR",
+        "hint": "Rich Gulf state hosting World Cup",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SENEGAL",
+        "hint": "Westernmost country in Africa",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SERBIA",
+        "hint": "Known for its Danube River",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SLOVAKIA",
+        "hint": "Known for its High Tatras",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SLOVENIA",
+        "hint": "Known for Lake Bled",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SOMALIA",
+        "hint": "Known for its Horn of Africa",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SRI LANKA",
+        "hint": "Teardrop-shaped island in the Indian Ocean",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "SUDAN",
+        "hint": "Known for the Nile River",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "SYRIA",
+        "hint": "Ancient land of Damascus",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "TANZANIA",
+        "hint": "Home of Mount Kilimanjaro",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "TUNISIA",
+        "hint": "Known for its Carthage ruins",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "UGANDA",
+        "hint": "Pearl of Africa",
+        "difficulty": "easy",
+        "points": 5
+    },
+    {
+        "word": "URUGUAY",
+        "hint": "Known for its beef and Mate tea",
+        "difficulty": "medium",
+        "points": 10
+    },
+    {
+        "word": "UZBEKISTAN",
+        "hint": "Known for the Silk Road cities",
+        "difficulty": "hard",
+        "points": 20
+    },
+    {
+        "word": "YEMEN",
+        "hint": "Known for its ancient architecture",
+        "difficulty": "easy",
+        "points": 5
+    }
+]
