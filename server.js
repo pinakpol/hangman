@@ -51,10 +51,14 @@ app.post("/start", (req, res) =>
 //----------------------------------------
 // Guess
 //----------------------------------------
+//----------------------------------------
+// Guess
+//----------------------------------------
 
 app.post("/guess", (req, res) =>
 {
     const board = req.body.board;
+
     const letter = req.body.letter;
 
     const game =
@@ -80,18 +84,39 @@ app.post("/guess", (req, res) =>
     const state =
         game.state();
 
-    if(
-        state.status == "win" ||
-        state.status == "lose"
-    )
+    //------------------------------------
+    // Guilty → Lose
+    //------------------------------------
+
+    if(state.status == "guilty")
     {
-        setTimeout(
-            function()
+        setTimeout(function()
+        {
+            if(game.status == "guilty")
             {
-                game.reset();
-            },
-            10000
-        );
+                game.status = "lose";
+            }
+        },2000);
+    }
+
+    //------------------------------------
+    // Auto reset after execution
+    //------------------------------------
+
+    if(state.status == "win")
+    {
+        setTimeout(function()
+        {
+            game.reset();
+        },10000);
+    }
+
+    if(state.status == "lose")
+    {
+        setTimeout(function()
+        {
+            game.reset();
+        },10000);
     }
 
     res.json(state);
