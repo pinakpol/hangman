@@ -191,6 +191,9 @@ function draw(data)
 
             status.textContent =
                 "AWAITING PRISONER";
+            status.style.color = "";
+status.style.fontWeight = "";
+status.style.fontSize = "";
 
             if(previousStatus != "idle")
             {
@@ -209,6 +212,9 @@ function draw(data)
 
             status.textContent =
                 "TRIAL IN PROGRESS";
+            status.style.color = "";
+status.style.fontWeight = "";
+status.style.fontSize = "";
 
             if(previousStatus != "playing")
             {
@@ -227,6 +233,9 @@ function draw(data)
 
             status.textContent =
                 "PRISONER PARDONED";
+            status.style.color = "";
+status.style.fontWeight = "";
+status.style.fontSize = "";
 
             if(previousStatus != "win")
             {
@@ -241,13 +250,22 @@ function draw(data)
 
             break;
 
-            case "guilty":
+           case "guilty":
 
     status.textContent =
         "GUILTY";
+            status.style.color = "#8B0000";
+status.style.fontWeight = "bold";
+status.style.fontSize = "42px";
+
+    if(previousStatus != "guilty")
+    {
+        currentAnnouncement =
+            "The Judge has found the prisoner GUILTY. Execution shall commence.";
+    }
 
     announcement.textContent =
-        "The Judge has spoken.";
+        currentAnnouncement;
 
     break;
 
@@ -255,6 +273,9 @@ function draw(data)
 
             status.textContent =
                 "SENTENCE CARRIED OUT";
+            status.style.color = "";
+status.style.fontWeight = "";
+status.style.fontSize = "";
 
             if(previousStatus != "lose")
             {
