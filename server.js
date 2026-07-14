@@ -26,29 +26,24 @@ app.get("/categories",(req,res)=>{
 // Start
 //----------------------------------------
 
-app.post("/start",(req,res)=>{
-
+app.post("/start", (req, res) =>
+{
     const board = req.body.board;
+
     const category = req.body.category || "animals";
 
-    if(!board)
+    const prisoner = req.body.prisoner || "Unknown Prisoner";
+
+    games.start(board, category);
+
+    const game = games.get(board);
+
+    if(game)
     {
-        return res.status(400).json({
-            error:"Missing board ID"
-        });
+        game.prisoner = prisoner;
     }
 
-    if(!games.start(board,category))
-    {
-        return res.status(400).json({
-            error:"Category not found"
-        });
-    }
-
-    res.json(
-        games.state(board)
-    );
-
+    res.json(games.state(board));
 });
 
 //----------------------------------------
