@@ -24,6 +24,7 @@ class Game
         this.word = "";
 
         this.hint = "";
+        this.prisoner = "";
 
         this.used = [];
 
