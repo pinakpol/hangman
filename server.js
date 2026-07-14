@@ -1,11 +1,13 @@
 const express = require("express");
 const GameManager = require("./game/GameManager");
+const WordManager = require("./game/WordManager");
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 
 const games = new GameManager();
+const words = new WordManager();
 
 app.use(express.json());
 app.use(express.static("Public"));
@@ -34,7 +36,7 @@ app.post("/start", (req, res) =>
         req.body.prisoner || "Unknown Prisoner";
 
     const category =
-        games.words.randomCategory();
+        words.randomCategory();
 
     games.start(
         board,
