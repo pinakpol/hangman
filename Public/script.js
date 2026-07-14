@@ -74,38 +74,45 @@ function draw(data)
 
     word.textContent =
         data.display || "";
-    let keyboard = document.getElementById("keyboard");
+    const keyboard = document.getElementById("keyboard");
 
 keyboard.innerHTML = "";
 
-if (data.canGuess)
+if(data.canGuess)
 {
     data.unusedLetters.forEach(letter =>
     {
-        const b = document.createElement("button");
+        const button =
+            document.createElement("button");
 
-        b.textContent = letter;
+        button.className = "letter";
 
-        b.onclick = async () =>
+        button.textContent = letter;
+
+        button.onclick = async function()
         {
-            await fetch("/guess",
-            {
-                method:"POST",
-                headers:
+            await fetch(
+                "/guess",
                 {
-                    "Content-Type":"application/json"
-                },
-                body:JSON.stringify(
-                {
-                    board:boardID,
-                    letter:letter
-                })
-            });
+                    method:"POST",
 
-            refresh();
+                    headers:
+                    {
+                        "Content-Type":"application/json"
+                    },
+
+                    body:JSON.stringify(
+                    {
+                        board: board,
+                        letter: letter
+                    })
+                }
+            );
+
+            update();
         };
 
-        keyboard.appendChild(b);
+        keyboard.appendChild(button);
     });
 }
 
