@@ -407,3 +407,19 @@ label{
 
     opacity:.5;
 }
+#announcement
+{
+    margin-top:12px;
+
+    font-style:italic;
+
+    font-size:20px;
+
+    color:#5c1d14;
+
+    min-height:50px;
+
+    text-align:center;
+
+    line-height:1.4;
+}
