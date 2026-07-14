@@ -77,7 +77,7 @@ class Game
 
         if(this.remaining <= 0)
         {
-            this.status = "lose";
+            this.status = "guilty";
             return;
         }
 
