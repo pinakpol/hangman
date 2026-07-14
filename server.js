@@ -57,7 +57,8 @@ app.post("/guess", (req, res) =>
     const board = req.body.board;
     const letter = req.body.letter;
 
-    const game = games.get(board);
+    const game =
+        games.getGame(board);
 
     if(!game)
     {
@@ -69,19 +70,28 @@ app.post("/guess", (req, res) =>
 
     if(game.status != "playing")
     {
-        return res.json(game.state());
+        return res.json(
+            game.state()
+        );
     }
 
     game.guess(letter);
 
-    const state = game.state();
+    const state =
+        game.state();
 
-    if(state.status == "win" || state.status == "lose")
+    if(
+        state.status == "win" ||
+        state.status == "lose"
+    )
     {
-        setTimeout(() =>
-        {
-            game.reset();
-        },10000);
+        setTimeout(
+            function()
+            {
+                game.reset();
+            },
+            10000
+        );
     }
 
     res.json(state);
