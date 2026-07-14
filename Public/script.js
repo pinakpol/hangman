@@ -74,6 +74,40 @@ function draw(data)
 
     word.textContent =
         data.display || "";
+    let keyboard = document.getElementById("keyboard");
+
+keyboard.innerHTML = "";
+
+if (data.canGuess)
+{
+    data.unusedLetters.forEach(letter =>
+    {
+        const b = document.createElement("button");
+
+        b.textContent = letter;
+
+        b.onclick = async () =>
+        {
+            await fetch("/guess",
+            {
+                method:"POST",
+                headers:
+                {
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify(
+                {
+                    board:boardID,
+                    letter:letter
+                })
+            });
+
+            refresh();
+        };
+
+        keyboard.appendChild(b);
+    });
+}
 
     attempts.textContent =
         data.attempts +
