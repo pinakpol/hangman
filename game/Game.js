@@ -6,7 +6,8 @@ class Game
     {
         this.words = new WordManager();
 
-        this.maxAttempts = 6;
+      this.difficulty = "easy";
+this.maxAttempts = 6;
 
         this.alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -33,8 +34,32 @@ class Game
 
     //------------------------------------------------
 
-    start(category)
+    start(category, difficulty)
     {
+       this.difficulty = difficulty || "easy";
+
+switch(this.difficulty)
+{
+    case "easy":
+        this.maxAttempts = 6;
+        break;
+
+    case "normal":
+        this.maxAttempts = 5;
+        break;
+
+    case "hard":
+        this.maxAttempts = 3;
+        break;
+
+    case "extreme":
+        this.maxAttempts = 2;
+        break;
+
+    default:
+        this.maxAttempts = 6;
+}
+        
         const data = this.words.random(category);
 
         if(!data)
@@ -212,6 +237,8 @@ state()
 
         maxAttempts:
             this.maxAttempts,
+        difficulty:
+    this.difficulty,
 
         hangmanStage:
             this.maxAttempts - this.remaining,
