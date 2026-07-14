@@ -37,11 +37,14 @@ class GameManager
 
     //------------------------------------------------
 
-    start(boardID, category, prisoner)
+   start(boardID, category, prisoner, difficulty)
 {
     const game = this.getGame(boardID);
 
-    const ok = game.start(category);
+    const ok = game.start(
+    category,
+    difficulty
+);
 
     if(ok)
     {
