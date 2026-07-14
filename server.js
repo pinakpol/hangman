@@ -30,21 +30,22 @@ app.post("/start", (req, res) =>
 {
     const board = req.body.board;
 
-    const category = req.body.category || "animals";
+    const prisoner =
+        req.body.prisoner || "Unknown Prisoner";
 
-    const prisoner = req.body.prisoner || "Unknown Prisoner";
+    const category =
+        games.words.randomCategory();
 
-   games.start(board, category, prisoner);
-    const game = games.get(board);
+    games.start(
+        board,
+        category,
+        prisoner
+    );
 
-    if(game)
-    {
-        game.prisoner = prisoner;
-    }
-
-    res.json(games.state(board));
+    res.json(
+        games.state(board)
+    );
 });
-
 //----------------------------------------
 // Guess
 //----------------------------------------
