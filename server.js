@@ -35,22 +35,24 @@ app.post("/start", (req, res) =>
     const prisoner =
         req.body.prisoner || "Unknown Prisoner";
 
+    const difficulty =
+        req.body.difficulty || "easy";
+
     const category =
         words.randomCategory();
 
     games.start(
         board,
         category,
-        prisoner
+        prisoner,
+        difficulty
     );
 
     res.json(
         games.state(board)
     );
 });
-//----------------------------------------
-// Guess
-//----------------------------------------
+
 //----------------------------------------
 // Guess
 //----------------------------------------
@@ -121,6 +123,7 @@ app.post("/guess", (req, res) =>
 
     res.json(state);
 });
+
 //----------------------------------------
 // State
 //----------------------------------------
