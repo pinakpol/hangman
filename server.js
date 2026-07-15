@@ -284,31 +284,73 @@ app.get("/halloffame", async (req, res) =>
 // Statistics
 //----------------------------------------
 
+//----------------------------------------
+// Statistics
+//----------------------------------------
+
 app.get("/stats", async (req, res) =>
 {
     try
     {
-        const result = await db.query(
-        `
-        SELECT
-            COUNT(*) AS games,
+        const result = await db.query(`
+            SELECT
 
-            SUM(
-                CASE
-                    WHEN result='win'
-                    THEN 1
-                    ELSE 0
-                END
-            ) AS wins,
+                COUNT(*) AS games,
 
-            SUM(
-                CASE
-                    WHEN result='lose'
-                    THEN 1
-                    ELSE 0
-                END
-            ) AS losses
-        FROM halloffame
+                SUM(
+                    CASE
+                        WHEN result='win'
+                        THEN 1
+                        ELSE 0
+                    END
+                ) AS wins,
+
+                SUM(
+                    CASE
+                        WHEN result='lose'
+                        THEN 1
+                        ELSE 0
+                    END
+                ) AS losses,
+
+                ROUND(
+                    AVG(wrong),
+                    2
+                ) AS averagewrong,
+
+                SUM(
+                    CASE
+                        WHEN difficulty='easy'
+                        THEN 1
+                        ELSE 0
+                    END
+                ) AS easy,
+
+                SUM(
+                    CASE
+                        WHEN difficulty='normal'
+                        THEN 1
+                        ELSE 0
+                    END
+                ) AS normal,
+
+                SUM(
+                    CASE
+                        WHEN difficulty='hard'
+                        THEN 1
+                        ELSE 0
+                    END
+                ) AS hard,
+
+                SUM(
+                    CASE
+                        WHEN difficulty='extreme'
+                        THEN 1
+                        ELSE 0
+                    END
+                ) AS extreme
+
+            FROM halloffame
         `);
 
         res.json(result.rows[0]);
