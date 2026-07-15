@@ -365,6 +365,61 @@ app.get("/stats", async (req, res) =>
         });
     }
 });
+
+//----------------------------------------
+// Leaderboard
+//----------------------------------------
+
+app.get("/leaderboard", async (req,res)=>
+{
+    try
+    {
+        const result = await db.query(
+        `
+        SELECT
+
+            player,
+
+            COUNT(*) AS games,
+
+            SUM(
+                CASE
+                    WHEN result='win'
+                    THEN 1
+                    ELSE 0
+                END
+            ) AS wins,
+
+            SUM(
+                CASE
+                    WHEN result='lose'
+                    THEN 1
+                    ELSE 0
+                END
+            ) AS losses
+
+        FROM halloffame
+
+        GROUP BY player
+
+        ORDER BY wins DESC,
+                 losses ASC
+
+        LIMIT 20
+        `);
+
+        res.json(result.rows);
+    }
+    catch(err)
+    {
+        console.error(err);
+
+        res.status(500).json(
+        {
+            error:"Database Error"
+        });
+    }
+});
 //----------------------------------------
 // Reset
 //----------------------------------------
