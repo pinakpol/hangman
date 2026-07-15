@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Player Statistics</title>
+
+<style>
+
+body
+{
+    margin:0;
+    padding:40px;
+
+    background:#2b1d13;
+
+    color:#f2dfb5;
+
+    font-family:Georgia,serif;
+}
+
+#panel
+{
+    width:700px;
+
+    margin:auto;
+
+    background:#4a3823;
+
+    border:4px solid #8d6b3c;
+
+    padding:30px;
+
+    box-shadow:0 0 30px black;
+}
+
+h1
+{
+    text-align:center;
+
+    margin-top:0;
+
+    letter-spacing:3px;
+}
+
+table
+{
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+td
+{
+    padding:10px;
+
+    border-bottom:1px solid #7a613d;
+}
+
+.label
+{
+    font-weight:bold;
+
+    width:240px;
+}
+
+.value
+{
+    text-align:right;
+
+    color:white;
+}
+
+#rate
+{
+    text-align:center;
+
+    font-size:28px;
+
+    margin-top:25px;
+
+    font-weight:bold;
+
+    color:#80ff80;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="panel">
+
+<h1>PRISON RECORD</h1>
+
+<table>
+
+<tr>
+<td class="label">Prisoner</td>
+<td class="value" id="player"></td>
+</tr>
+
+<tr>
+<td class="label">Games Played</td>
+<td class="value" id="games"></td>
+</tr>
+
+<tr>
+<td class="label">Royal Pardons</td>
+<td class="value" id="wins"></td>
+</tr>
+
+<tr>
+<td class="label">Executions</td>
+<td class="value" id="losses"></td>
+</tr>
+
+<tr>
+<td class="label">Last Played</td>
+<td class="value" id="played"></td>
+</tr>
+
+</table>
+
+<div id="rate"></div>
+
+</div>
+
+<script>
+
+const params =
+new URLSearchParams(location.search);
+
+const player =
+params.get("player");
+
+document.getElementById("player").innerText =
+player;
+
+fetch("/playerstats?player="+encodeURIComponent(player))
+
+.then(r=>r.json())
+
+.then(data=>{
+
+const games =
+Number(data.games||0);
+
+const wins =
+Number(data.wins||0);
+
+const losses =
+Number(data.losses||0);
+
+document.getElementById("games").innerText =
+games;
+
+document.getElementById("wins").innerText =
+wins;
+
+document.getElementById("losses").innerText =
+losses;
+
+document.getElementById("played").innerText =
+data.lastplayed
+? new Date(data.lastplayed).toLocaleString()
+: "-";
+
+let rate = 0;
+
+if(games>0)
+    rate = Math.round(wins*100/games);
+
+document.getElementById("rate").innerText =
+"Success Rate : "+rate+"%";
+
+});
+
+</script>
+
+</body>
+
+</html>
