@@ -214,7 +214,11 @@ state()
 {
     return {
         status: this.status,
+difficulty:
+    this.difficulty,
 
+word:
+    this.word,
         message: this.message(),
 
         canGuess:
