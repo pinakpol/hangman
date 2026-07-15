@@ -420,6 +420,45 @@ app.get("/leaderboard", async (req,res)=>
         });
     }
 });
+
+//----------------------------------------
+// Last Prisoner
+//----------------------------------------
+
+app.get("/lastprisoner", async (req,res)=>
+{
+    try
+    {
+        const result = await db.query(`
+            SELECT
+                player,
+                difficulty,
+                category,
+                word,
+                result,
+                wrong,
+                played
+            FROM halloffame
+            ORDER BY played DESC
+            LIMIT 1
+        `);
+
+        if(result.rows.length==0)
+            return res.json({});
+
+        res.json(result.rows[0]);
+    }
+    catch(err)
+    {
+        console.error(err);
+
+        res.status(500).json(
+        {
+            error:"Database Error"
+        });
+    }
+});
+
 //----------------------------------------
 // Reset
 //----------------------------------------
