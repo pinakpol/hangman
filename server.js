@@ -244,12 +244,15 @@ app.get("/status",(req,res)=>{
 });
 
 //----------------------------------------
+//----------------------------------------
 // Hall of Fame
 //----------------------------------------
 
-app.get("/halloffame",(req,res)=>{
-
-    db.all(
+app.get("/halloffame", async (req, res) =>
+{
+    try
+    {
+        const result = await db.query(
         `
         SELECT
             player,
@@ -260,26 +263,22 @@ app.get("/halloffame",(req,res)=>{
             wrong,
             played
         FROM halloffame
-        ORDER BY id DESC
-        LIMIT 50
-        `,
-        [],
-        function(err,rows)
+        ORDER BY played DESC
+        LIMIT 100
+        `);
+
+        res.json(result.rows);
+    }
+    catch(err)
+    {
+        console.error(err);
+
+        res.status(500).json(
         {
-            if(err)
-            {
-                return res.status(500).json(
-                {
-                    error:err.message
-                });
-            }
-
-            res.json(rows);
-        }
-    );
-
+            error: "Database Error"
+        });
+    }
 });
-
 //----------------------------------------
 // Reset
 //----------------------------------------
