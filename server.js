@@ -253,6 +253,43 @@ app.get("/status",(req,res)=>{
 });
 
 //----------------------------------------
+// Hall of Fame
+//----------------------------------------
+
+app.get("/halloffame",(req,res)=>{
+
+    db.all(
+        `
+        SELECT
+            player,
+            difficulty,
+            category,
+            word,
+            result,
+            wrong,
+            played
+        FROM halloffame
+        ORDER BY id DESC
+        LIMIT 50
+        `,
+        [],
+        function(err,rows)
+        {
+            if(err)
+            {
+                return res.status(500).json(
+                {
+                    error:err.message
+                });
+            }
+
+            res.json(rows);
+        }
+    );
+
+});
+
+//----------------------------------------
 // Reset
 //----------------------------------------
 
