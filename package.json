@@ -1,7 +1,4 @@
 {
-  "engines": {
-  "node": "22.x"
-}
   "name": "sl-hangman",
   "version": "1.0.0",
   "main": "server.js",
@@ -10,6 +7,6 @@
   },
   "dependencies": {
     "express": "^4.19.2",
-    "sqlite3": "^6.0.1"
+    "pg": "^8.22.0"
   }
 }

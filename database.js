@@ -1,27 +1,31 @@
-const sqlite3 = require("sqlite3").verbose();
+const { Pool } = require("pg");
 
-const db = new sqlite3.Database("./halloffame.db");
-
-db.serialize(() =>
-{
-    db.run(`
-        CREATE TABLE IF NOT EXISTS halloffame
-        (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-
-            player TEXT,
-            difficulty TEXT,
-
-            category TEXT,
-            word TEXT,
-
-            result TEXT,
-
-            wrong INTEGER,
-
-            played DATETIME DEFAULT CURRENT_TIMESTAMP
-        )
-    `);
+const pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
-module.exports = db;
+async function initialize()
+{
+    await pool.query(`
+        CREATE TABLE IF NOT EXISTS halloffame
+        (
+            id SERIAL PRIMARY KEY,
+            player TEXT,
+            difficulty TEXT,
+            category TEXT,
+            word TEXT,
+            result TEXT,
+            wrong INTEGER,
+            played TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    `);
+
+    console.log("Database Ready");
+}
+
+initialize();
+
+module.exports = pool;
