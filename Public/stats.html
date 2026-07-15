@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Prison Statistics</title>
+
+<style>
+
+body
+{
+    margin:0;
+    padding:40px;
+
+    background:#2d2215;
+    color:#f0e2b6;
+
+    font-family:Georgia,serif;
+}
+
+#panel
+{
+    width:700px;
+
+    margin:auto;
+
+    background:#4a3823;
+
+    border:4px solid #8b6b3c;
+
+    padding:30px;
+
+    box-shadow:0 0 30px black;
+}
+
+h1
+{
+    text-align:center;
+
+    margin-top:0;
+
+    letter-spacing:3px;
+}
+
+table
+{
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+}
+
+td
+{
+    padding:12px;
+
+    border-bottom:1px solid #7d6440;
+}
+
+td:first-child
+{
+    font-weight:bold;
+}
+
+.value
+{
+    text-align:right;
+
+    font-size:20px;
+
+    color:#ffffff;
+}
+
+.footer
+{
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#c9b37b;
+
+    font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="panel">
+
+<h1>PRISON STATISTICS</h1>
+
+<table>
+
+<tr>
+<td>Total Games</td>
+<td class="value" id="games">0</td>
+</tr>
+
+<tr>
+<td>Pardons</td>
+<td class="value" id="wins">0</td>
+</tr>
+
+<tr>
+<td>Executions</td>
+<td class="value" id="losses">0</td>
+</tr>
+
+<tr>
+<td>Average Wrong Guesses</td>
+<td class="value" id="averagewrong">0</td>
+</tr>
+
+<tr>
+<td>Easy Games</td>
+<td class="value" id="easy">0</td>
+</tr>
+
+<tr>
+<td>Normal Games</td>
+<td class="value" id="normal">0</td>
+</tr>
+
+<tr>
+<td>Hard Games</td>
+<td class="value" id="hard">0</td>
+</tr>
+
+<tr>
+<td>Extreme Games</td>
+<td class="value" id="extreme">0</td>
+</tr>
+
+<tr>
+<td>Win Percentage</td>
+<td class="value" id="winrate">0%</td>
+</tr>
+
+</table>
+
+<div class="footer">
+
+Hangman's Gallows
+
+</div>
+
+</div>
+
+<script>
+
+fetch("/stats")
+
+.then(r=>r.json())
+
+.then(data=>{
+
+document.getElementById("games").innerText =
+Number(data.games);
+
+document.getElementById("wins").innerText =
+Number(data.wins);
+
+document.getElementById("losses").innerText =
+Number(data.losses);
+
+document.getElementById("averagewrong").innerText =
+data.averagewrong ?? "0";
+
+document.getElementById("easy").innerText =
+Number(data.easy);
+
+document.getElementById("normal").innerText =
+Number(data.normal);
+
+document.getElementById("hard").innerText =
+Number(data.hard);
+
+document.getElementById("extreme").innerText =
+Number(data.extreme);
+
+let games =
+Number(data.games);
+
+let wins =
+Number(data.wins);
+
+let rate = 0;
+
+if(games > 0)
+{
+    rate = (wins * 100 / games).toFixed(1);
+}
+
+document.getElementById("winrate").innerText =
+rate + "%";
+
+});
+
+</script>
+
+</body>
+
+</html>
