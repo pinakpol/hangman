@@ -279,6 +279,50 @@ app.get("/halloffame", async (req, res) =>
         });
     }
 });
+
+//----------------------------------------
+// Statistics
+//----------------------------------------
+
+app.get("/stats", async (req, res) =>
+{
+    try
+    {
+        const result = await db.query(
+        `
+        SELECT
+            COUNT(*) AS games,
+
+            SUM(
+                CASE
+                    WHEN result='win'
+                    THEN 1
+                    ELSE 0
+                END
+            ) AS wins,
+
+            SUM(
+                CASE
+                    WHEN result='lose'
+                    THEN 1
+                    ELSE 0
+                END
+            ) AS losses
+        FROM halloffame
+        `);
+
+        res.json(result.rows[0]);
+    }
+    catch(err)
+    {
+        console.error(err);
+
+        res.status(500).json(
+        {
+            error:"Database Error"
+        });
+    }
+});
 //----------------------------------------
 // Reset
 //----------------------------------------
