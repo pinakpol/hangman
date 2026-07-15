@@ -216,12 +216,13 @@ case "guilty":
 state()
 {
     return {
-        status: this.status,
-difficulty:
-    this.difficulty,
 
-word:
-    this.word,
+        status: this.status,
+
+        difficulty: this.difficulty,
+
+        word: this.word,
+
         message: this.message(),
 
         canGuess:
@@ -244,8 +245,6 @@ word:
 
         maxAttempts:
             this.maxAttempts,
-        difficulty:
-    this.difficulty,
 
         hangmanStage:
             this.maxAttempts - this.remaining,
