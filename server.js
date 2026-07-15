@@ -13,9 +13,11 @@ const words = new WordManager();
 app.use(express.json());
 app.use(express.static("Public"));
 
-function SaveGame(state)
+async function SaveGame(state)
 {
-    db.run(
+    try
+    {
+        await db.query(
         `
         INSERT INTO halloffame
         (
@@ -28,12 +30,12 @@ function SaveGame(state)
         )
         VALUES
         (
-            ?,
-            ?,
-            ?,
-            ?,
-            ?,
-            ?
+            $1,
+            $2,
+            $3,
+            $4,
+            $5,
+            $6
         )
         `,
         [
@@ -43,23 +45,12 @@ function SaveGame(state)
             state.word,
             state.status,
             state.wrongLetters.length
-        ],
-        function(err)
-        {
-            if(err)
-            {
-                console.log("Hall of Fame save failed:", err.message);
-            }
-            else
-            {
-                console.log(
-                    "Hall of Fame:",
-                    state.prisoner,
-                    state.result || state.status
-                );
-            }
-        }
-    );
+        ]);
+    }
+    catch(err)
+    {
+        console.error(err);
+    }
 }
 //----------------------------------------
 // Categories
