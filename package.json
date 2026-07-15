@@ -1,4 +1,7 @@
 {
+  "engines": {
+  "node": "22.x"
+}
   "name": "sl-hangman",
   "version": "1.0.0",
   "main": "server.js",
