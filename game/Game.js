@@ -20,6 +20,8 @@ this.maxAttempts = 6;
     {
         this.status = "idle";
 
+        this.saved = false;
+
         this.category = "";
 
         this.word = "";
@@ -76,6 +78,7 @@ switch(this.difficulty)
         this.remaining = this.maxAttempts;
 
         this.status = "playing";
+        this.saved = false;
 
         return true;
     }
