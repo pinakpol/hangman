@@ -43,10 +43,24 @@ function SaveGame(state)
             state.word,
             state.status,
             state.wrongLetters.length
-        ]
+        ],
+        function(err)
+        {
+            if(err)
+            {
+                console.log("Hall of Fame save failed:", err.message);
+            }
+            else
+            {
+                console.log(
+                    "Hall of Fame:",
+                    state.prisoner,
+                    state.result || state.status
+                );
+            }
+        }
     );
 }
-
 //----------------------------------------
 // Categories
 //----------------------------------------
