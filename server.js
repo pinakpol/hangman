@@ -1,4 +1,5 @@
 const express = require("express");
+const db = require("./database");
 const GameManager = require("./game/GameManager");
 const WordManager = require("./game/WordManager");
 
@@ -11,6 +12,40 @@ const words = new WordManager();
 
 app.use(express.json());
 app.use(express.static("Public"));
+
+function SaveGame(state)
+{
+    db.run(
+        `
+        INSERT INTO halloffame
+        (
+            player,
+            difficulty,
+            category,
+            word,
+            result,
+            wrong
+        )
+        VALUES
+        (
+            ?,
+            ?,
+            ?,
+            ?,
+            ?,
+            ?
+        )
+        `,
+        [
+            state.prisoner,
+            state.difficulty,
+            state.category,
+            state.word,
+            state.status,
+            state.wrongLetters.length
+        ]
+    );
+}
 
 //----------------------------------------
 // Categories
