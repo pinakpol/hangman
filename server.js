@@ -125,28 +125,42 @@ app.post("/guess", (req, res) =>
     // Guilty → Lose
     //------------------------------------
 
-    if(state.status == "guilty")
+   if(state.status == "guilty")
+{
+    setTimeout(function()
     {
-        setTimeout(function()
+        if(game.status == "guilty")
         {
-            if(game.status == "guilty")
+            game.status = "lose";
+
+            if(!game.saved)
             {
-                game.status = "lose";
+                SaveGame(game.state());
+
+                game.saved = true;
             }
-        },2000);
-    }
+        }
+    },2000);
+}
 
     //------------------------------------
     // Auto reset after execution
     //------------------------------------
 
-    if(state.status == "win")
+   if(state.status == "win")
+{
+    if(!game.saved)
     {
-        setTimeout(function()
-        {
-            game.reset();
-        },10000);
+        SaveGame(game.state());
+
+        game.saved = true;
     }
+
+    setTimeout(function()
+    {
+        game.reset();
+    },10000);
+}
 
     if(state.status == "lose")
     {
