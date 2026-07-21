@@ -242,8 +242,19 @@ app.get("/status",(req,res)=>{
     );
 
 });
+//-pol del start---------------------------------------
+// Add this temporary debugger to see exactly what 'db' is on Render
+console.log("DEBUG: db structure on startup is:", typeof db, Object.getOwnPropertyNames(db || {}));
 
-//----------------------------------------
+// Bulletproof fallback to make sure db.query maps directly to your pg pool
+if (db && typeof db.query !== 'function' && typeof db.all === 'function') {
+    db.query = async function(text, params) {
+        const rows = await this.all(text, params);
+        return { rows };
+    };
+}
+
+//-pol del end---------------------------------------
 //----------------------------------------
 // Hall of Fame
 //----------------------------------------
